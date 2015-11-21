@@ -5,7 +5,7 @@ global:
     home: "Home"
     categories: "Categories"
     category: "Category"
-    tags: "Tags"
+    tags: "Tag"
     tag: "Tag"
     archives: "Archives"
     search: "Search"
