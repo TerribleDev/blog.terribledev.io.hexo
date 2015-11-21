@@ -5,45 +5,44 @@
     }
     // Create title of the page
     var title = '';
-    var title_suffix = ' - ' + config.title;
 
     if (is_home()) {
         title += config.title;
     }
     else if (is_archive()){
-        title += __('global.archives');
+        title += 'All archives';
 
         if (is_month()) {
-            title += ': ' + page.year + '/' + page.month;
+            title += ' : ' + page.year + '/' + page.month;
         }
         else if (is_year()) {
-            title += ': ' + page.year;
+            title += ' : ' + page.year;
         }
 
-        title += title_suffix;
+        title += ' - ' + config.title;
     }
     else if (is_tag()) {
         if (page.tag) {
-            title += __('global.tag') + ': ' + page.tag;
+            title += 'Tag : ' + page.tag;
         }
         else {
-            title += __('global.tags');
+            title += 'All tags';
         }
 
-        title += title_suffix;
+        title += ' - ' + config.title;
     }
     else if (is_category()) {
         if (page.category) {
-            title += __('global.category') + ': ' + page.category;
+            title += 'Category : ' + page.category;
         }
         else {
-            title += __('global.categories');
+            title += 'All categories';
         }
 
-        title += title_suffix;
+        title += ' - ' + config.title;
     }
     else {
-      title += page.title + title_suffix;
+      title += page.title + ' - ' + config.title;
     }
 %>
 <head>
