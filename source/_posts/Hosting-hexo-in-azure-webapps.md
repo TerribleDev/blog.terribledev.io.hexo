@@ -18,12 +18,12 @@ Generate your deploy.cmd (or sh if you prefer)
 
 Do not configure anything in the deployment section of your config.yml, this will cause it to publish to the public folder.
 
-The only command you should have to do is hexo generate.
+The only command you should have to do is hexo generate. Add one of the following to your deploy.cmd or deploy.sh depending on which language you generated (you will want to do this after the script npm installs).
 
-ssh:
+deploy.sh:
 `eval ./node_modules/.bin/hexo generate`
 
-cmd
+deploy.cmd
 `.\node_modules\.bin\hexo.cmd generate`
 
 We just need to configure IIS. Drop a file called web.config at the root of your blog. Add the following markup.
