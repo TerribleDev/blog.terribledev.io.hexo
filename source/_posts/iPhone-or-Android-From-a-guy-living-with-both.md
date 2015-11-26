@@ -12,22 +12,22 @@ date: 2014-02-24 19:29:43
 ---
 
 I know, I know the very first question you ask is going to be *why do you have two phones*, the answer being One is for work, the other is for my personal life. Now that we are done with that subject, we can get on with the review...
-
+<!-- more -->
 ## Warning: I am a self-Proclaimed Android Fan-boy
 
 Before I really get into it, I will warn you all that I am apart of the Android User Master Race. Some bias opinion **will** occur.
 
 ## What phones?
 
-I will mostly be reviewing the [iPhone 5c](http://www.apple.com/iphone-5c/), against the [Nexus 5](https://play.google.com/store/devices/details/Nexus_5_16GB_White?id=nexus_5_white_16gb&hl=en). 
+I will mostly be reviewing the [iPhone 5c](http://www.apple.com/iphone-5c/), against the [Nexus 5](https://play.google.com/store/devices/details/Nexus_5_16GB_White?id=nexus_5_white_16gb&hl=en).
 
 ## What no flashy graphs?
 
-Unlike most reviews this wont have a bunch of data touting the disk read speeds during mid-day under controlled duress. This is a simple review of my experience with the two devices. 
+Unlike most reviews this wont have a bunch of data touting the disk read speeds during mid-day under controlled duress. This is a simple review of my experience with the two devices.
 
 ## Build Quality <i class="fa fa-apple"></i>
 
-### iPhone 5c 
+### iPhone 5c
 The first time I held the 5c, I thought it felt like a kids toy. Although that feeling still lingers with me today, I have noticed since that the quality of the build is fantastic. The buttons feel like they were made to last 1000 years, and the plastic does not feel cheap. I get the feeling it would survive a nasty fall. Although the phone is small, it does not make me wish I had a bigger one. On a side note I was more blown away by the iPhone headphones. These ear buds are actually great value for $30 (free with iPhone). They sound amazing, and they can take a beating. I plug them into my Nexus 5 to make phone calls a lot.
 
 ### Nexus 5
@@ -55,7 +55,7 @@ Android OS is pretty awesome as well but there are some flaws. On a side note I'
 ## Finding Applications <i class="fa fa-apple"></i>
 
 
-I got to give this one to apple. I'm not sure of the Apple stores size, but I felt the store contained better quality apps. The Android app store is really good if you want [Confucius quotes](https://play.google.com/store/apps/details?id=com.Quotes.ConfuciusQuotes&hl=en), apps made in [3 days or less](https://play.google.com/store/apps/details?id=ultimategravatarsync.ultimategravatarsyncfree&hl=en), or apps that show hot asian babes. [Apple](http://www.apple.com/) has done a good job at keeping the quality high. I never found an app that had no value to the phone. 
+I got to give this one to apple. I'm not sure of the Apple stores size, but I felt the store contained better quality apps. The Android app store is really good if you want [Confucius quotes](https://play.google.com/store/apps/details?id=com.Quotes.ConfuciusQuotes&hl=en), apps made in [3 days or less](https://play.google.com/store/apps/details?id=ultimategravatarsync.ultimategravatarsyncfree&hl=en), or apps that show hot asian babes. [Apple](http://www.apple.com/) has done a good job at keeping the quality high. I never found an app that had no value to the phone.
 
 ## Battery <i class="fa fa-apple"></i>
 
@@ -63,7 +63,7 @@ The iPhones battery is the most impressive part. The Nexus 5 will give me a full
 
 ## Siri vs Google Now <i class="fa fa-android"></i>
 
-I'm not going into to much depth here, but as a user I much prefered Google Now. Although Siri had some nice qualities, I felt like google now was more accurate on searching, and provided better context in my queries. Google Now feels much snappier, and responds only when you need it *(ok google)*. 
+I'm not going into to much depth here, but as a user I much prefered Google Now. Although Siri had some nice qualities, I felt like google now was more accurate on searching, and provided better context in my queries. Google Now feels much snappier, and responds only when you need it *(ok google)*.
 
 ## Trend Factor <i class="fa fa-android"></i>
 
@@ -73,5 +73,3 @@ I think apple always use to win this category, however with google wallet and NF
 
 ![Android Won](/content/images/2014/Feb/115580-1.png)
 The iPhone, while being a real contender is far from perfect. I have give this to the Nexus 5. That being the case my dream phone would be an iPhone running Android software. I really prefer the software of Android, but retina display, and camera really makes me like the iPhone a lot. My only serious gripe with Android is the quality of the apps. However it does not override the iPhones terrible keyboard.
-
-

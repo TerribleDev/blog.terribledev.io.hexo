@@ -11,10 +11,10 @@ date: 2014-07-22 01:37:50
 ---
 
 This tutorial is about using SSL certs with WiX for IIS websites. For those of you whom didn't know, WiX is an MSI generator. You can even deploy IIS applications with WiX's MSI's.
-
+<!-- more -->
 ## Warning: I suck at wix
 
-Now I am going to start of by saying, I am far from an expert on wix. 
+Now I am going to start of by saying, I am far from an expert on wix.
 
 >If someone knows a better way please comment below. Tell me I am wrong
 
@@ -28,7 +28,7 @@ Ok so before I go on, I am not going to explain everything from scratch.
 
 
 
-Ok here it goes...In your fragment that declares your website you need to declare a binary. This says basically bundle the binary code from this file into the msi. This can go right under your fragment tag. The **sourceFile** tag should be the path to your certificate. 
+Ok here it goes...In your fragment that declares your website you need to declare a binary. This says basically bundle the binary code from this file into the msi. This can go right under your fragment tag. The **sourceFile** tag should be the path to your certificate.
 
 ```XML
 <Binary Id="certBinary" SourceFile=".\IRCool.org.pfx"/>
@@ -47,7 +47,7 @@ The binary key in the certificate tag needs to match the ID of the binary tag we
 ```
 
 <iis:Certificate Id="cert" BinaryKey="certBinary" Name="IRCool.org" StoreLocation="localMachine" StoreName="personal" PFXPassword="mypasswordisawesome" Request="no" />
-                            
+
 
 ```
 
@@ -88,7 +88,7 @@ protected override void RequestStartup(TinyIoCContainer container, IPipelines pi
 
 ## tl;dr?
 
-You should end up with a fragment that resembles this: 
+You should end up with a fragment that resembles this:
 
 ```
 <Fragment>

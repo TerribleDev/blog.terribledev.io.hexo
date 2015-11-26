@@ -20,7 +20,7 @@ This will be a brief overview on how to get admob working with Xamarin.
 I highly suggest you run this on a real phone. I'm not sure if the virtual phones can load content on the internet. I always develop on a real phone.
 
 Sample code located in a [repo at github](https://github.com/tparnell8/XamarinAdmobTutorial)
-
+<!-- more -->
 ## Create an admob account
 
 First you will need to create an account. After you do so create an ad, you must choose either full page aka Interstitial, or banner ad.
@@ -32,7 +32,7 @@ This is quite simple right click on the components folder (in visual studio, or 
 
 {<2>}![get a componant](/content/images/2014/Mar/componant.png)
 
-Find the play services you require and click Add to App. 
+Find the play services you require and click Add to App.
 
 {<6>}![](/content/images/2014/Mar/playservices.PNG)
 
@@ -81,7 +81,7 @@ namespace funtimes
           var layout = FindViewById<LinearLayout>(Resource.Id.mainlayout);
           layout.AddView(ad);
          }
-         
+
   }
 }
 
@@ -104,7 +104,7 @@ namespace admobDemo.AndroidPhone.ad
 {
     public static class AdWrapper
     {
-        
+
 
         public static AdView ConstructStandardBanner(Context con, AdSize adsize, string UnitID)
         {
@@ -121,7 +121,7 @@ namespace admobDemo.AndroidPhone.ad
             ad.LoadAd(requestbuilder.Build());
             return ad;
         }
-    
+
     }
 
 
@@ -157,14 +157,14 @@ namespace admobDemo.AndroidPhone
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-            
+
             _bannerad = AdWrapper.ConstructStandardBanner(this, AdSize.SmartBanner, "your ad id here");
              _bannerad.CustomBuild();
             var layout = FindViewById<LinearLayout>(Resource.Id.mainlayout);
             layout.AddView(_bannerad);
 		}
 
-           
+
 
         protected override void OnResume()
         {

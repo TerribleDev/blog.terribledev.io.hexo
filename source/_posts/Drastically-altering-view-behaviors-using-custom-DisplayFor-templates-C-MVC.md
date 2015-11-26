@@ -1,7 +1,7 @@
 title: 'Drastically altering view behaviors using custom DisplayFor templates C# MVC'
 tags:
 
-  - asp.net
+  - aspnet
   - c#
   - MVC
 permalink: custom-mvc-display-templates-2
@@ -13,7 +13,7 @@ date: 2015-09-13 12:08:47
 One feature that I think is highly under-documented in the C# MVC framework is custom `DisplayFor` and `EditorFor` Templates.
 
 By simply making folders in your views folder called `DisplayTemplates` and `EditorTemplates` you can use the `DisplayFor(a=>a.TypeHere)` and `EditFor(a=>a.TypeHere)` with any custom types you so choose.
-
+<!-- more -->
 ```
 -Controllers
 -Views
@@ -51,7 +51,7 @@ I created an interface called `ITile` and had my ImageTile, and TextTile inherit
         public ICollection<ITile> Tiles { get; set; }
     }
 
-``` 
+```
 
 So my controllers simply creates these tile objects. The main view loops over the tiles and calls a partial view that looks like this.
 

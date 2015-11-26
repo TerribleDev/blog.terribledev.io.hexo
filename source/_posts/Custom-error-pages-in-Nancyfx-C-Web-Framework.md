@@ -13,8 +13,8 @@ date: 2014-03-31 20:40:54
 
 To do custom error pages in Nancy you must implement an IStatusCodeHandler. This class must provide 2 methods. HandlesStatusCode is a bool that basically should tell Nancy if this class will handle the status code. If this returns true then this class will be responsible for handling the request.
 
-
-```csharp 
+<!-- more -->
+```csharp
 
  public bool HandlesStatusCode(HttpStatusCode statusCode, NancyContext context)
  {
@@ -25,7 +25,7 @@ To do custom error pages in Nancy you must implement an IStatusCodeHandler. This
  {
    var response = viewRenderer.RenderView(context, "Your404View");
  }
- 
+
 
 ```
 
@@ -40,7 +40,7 @@ Checks will be the getter of this information, and viewRenderer will be the mech
 
 ```
 
-private static IEnumerable<int> _checks = new List<int>(); 
+private static IEnumerable<int> _checks = new List<int>();
 
         public static IEnumerable<int> Checks {  get { return _checks; } }
 
@@ -125,7 +125,7 @@ public void Handle(HttpStatusCode statusCode, NancyContext context)
 You will need to make the necessary view, and you will also need to give it the http codes you wish it to handle. In my case I add them from the web.config during start up. I also use a module to add/remove status codes at will (ill provide a sample of that module below)...
 
 
-## Final Result 
+## Final Result
 
 ### IStatusCodeHandler Class:
 
@@ -133,7 +133,7 @@ You will need to make the necessary view, and you will also need to give it the 
 
 public class CustomStatusCode : IStatusCodeHandler
     {
-        private static IEnumerable<int> _checks = new List<int>(); 
+        private static IEnumerable<int> _checks = new List<int>();
 
         public static IEnumerable<int> Checks {  get { return _checks; } }
 
@@ -148,7 +148,7 @@ public class CustomStatusCode : IStatusCodeHandler
         {
                 return (_checks.Any(x => x == (int) statusCode));
         }
-        
+
         public static void AddCode(int code)
         {
             AddCode(new List<int>() {code});
@@ -233,17 +233,17 @@ public class StatusCodesModule : NancyModule
 public class Bootstrapper : DefaultNancyBootstrapper
     {
 
-       
+
         protected override void ApplicationStartup(TinyIoCContainer container, IPipelines pipelines)
         {
-            
+
             CustomStatusCode.AddCode(404);
             CustomStatusCode.AddCode(ConfigurationManager.AppSettings["HttpErrorCodes"].Split(',').Select(x => int.Parse(x)));
-           
+
 
             base.ApplicationStartup(container, pipelines);
         }
-        
+
     }
 
 

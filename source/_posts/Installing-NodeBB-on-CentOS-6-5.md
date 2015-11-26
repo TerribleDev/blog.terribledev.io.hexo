@@ -15,10 +15,10 @@ date: 2014-03-01 14:14:42
 
 [NodeBB](https://nodebb.org/) is forum software written on [Node.js](http://nodejs.org/)
 
-The official installation instructions are on [github](https://github.com/designcreateplay/NodeBB), but the documentation is for [Ubuntu](http://www.ubuntu.com/). 
+The official installation instructions are on [github](https://github.com/designcreateplay/NodeBB), but the documentation is for [Ubuntu](http://www.ubuntu.com/).
 
 To install on CentOS follow these instructions.
-
+<!-- more -->
 Install the base software stack.
 
 ```

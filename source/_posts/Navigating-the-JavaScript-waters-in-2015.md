@@ -10,10 +10,10 @@ date: 2015-09-01 19:39:41
 ---
 
 In this last year I have done much more JavaScript development than I have before. The landscape, and tools have exploded over the last few years. Gone are the days of JQuery widgets, and come forth have advanced virtual dom libraries, JavaScript servers, and multiple package managers. Along with new language features.
-
+<!-- more -->
 ## Node.js and io.js
 
-Right now there are two versions of Node.js. Although fairly soon the code bases will [merge back together](http://thenextweb.com/dd/2015/06/16/node-js-and-io-js-are-settling-their-differences-merging-back-together/). 
+Right now there are two versions of Node.js. Although fairly soon the code bases will [merge back together](http://thenextweb.com/dd/2015/06/16/node-js-and-io-js-are-settling-their-differences-merging-back-together/).
 
 For those of you whom don't know, node.js is a server side JavaScript environment. io.js was a recent fork of the node.js code base to include newer language features, and updated versions of V8.
 
@@ -33,7 +33,7 @@ In the long run both of these runtimes will merge to make the Node Foundation. I
 Modules are a pattern that encapsulates JavaScript code so scripts do not have to rely on the global namespace, but instead reference the file definitions.
 
 * CommonJS essentially defines module patterns with the use of an exports object.
-* [AMD](http://requirejs.org/docs/whyamd.html) is a module definition designed for files to be downloaded separately, with the browser in mind. 
+* [AMD](http://requirejs.org/docs/whyamd.html) is a module definition designed for files to be downloaded separately, with the browser in mind.
 
 ## Great libraries to mention
 

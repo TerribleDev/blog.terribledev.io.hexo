@@ -35,7 +35,7 @@ var shared = con.GetSharedPreferences("PreferenceName", FileCreationMode.WorldWr
 The main issue I have/had with this is you often have to know what will be returned, and what type you need to save as. Usually this isn't difficult, but it adds an un-needed level of complexity.
 
 The other major issues I have with this, is that it is quite verbose, and unnecessary. The code duplication here can be quite high.
-
+<!-- more -->
 ## The Solution
 
 I recently added on [github](https://github.com/tparnell8/XamAndroidSettings) an abstraction around the shared preferences that make it easier to use. This class uses [c# generics](http://msdn.microsoft.com/en-us/library/512aeb7t.aspx), and an extension method I wrote for `ISharedPreferencesEditor` that make SharedPreferences easier to use.

@@ -13,8 +13,8 @@ date: 2014-06-28 19:26:00
 
 So a while back I made a website that uses the Excel interop (long story). Since I made it a while ago, the IIS configuration is not automated, and must be done artisanally.
 
-Recently I have been working on moving it to a new server. I installed Excel, and the website. 
-
+Recently I have been working on moving it to a new server. I installed Excel, and the website.
+<!-- more -->
 **Everything seemed ok until sysprep happend!**
 
 ![](/content/images/2014/Jun/jackie.PNG)

@@ -9,8 +9,8 @@ updated: '2015-07-11 22:14:46'
 date: 2015-07-11 21:50:33
 ---
 
-Github has become the defacto online source hosting provider. More projects than ever before use github, and it has become a predominate force in the open source community. I use github quite a bit, and I love it. 
-
+Github has become the defacto online source hosting provider. More projects than ever before use github, and it has become a predominate force in the open source community. I use github quite a bit, and I love it.
+<!-- more -->
 ## What is bitbucket?
 
 If you are unfamiliar, bitbucket is [Atlassian's](https://www.atlassian.com/) version of github. Bitbucket provides online hosting of code. Free public repo's, and it even stands apart from github by providing free private repos.
@@ -27,7 +27,7 @@ Bitbucket has the ability to prevent history re-writes including force pushes, w
 
 ## Why I don't use bitbucket (often)
 
-So overall I love bitbucket, except I hardly use it. Most of the coding I do, I open source. I want people to find my code, and contribute to it. Anyone can work open source projects in bitbucket, but the platform does not provide a great way for people to discover repositories. To put it simply, bitbucket was ment for people working in teams, while Github was ment for social coding. 
+So overall I love bitbucket, except I hardly use it. Most of the coding I do, I open source. I want people to find my code, and contribute to it. Anyone can work open source projects in bitbucket, but the platform does not provide a great way for people to discover repositories. To put it simply, bitbucket was ment for people working in teams, while Github was ment for social coding.
 
 If I work on a startup, or something where I have a real team. We will use bitbucket, and even pay for additional features. I have taken advantage of the free repos in bitbucket, quite a bit.
 

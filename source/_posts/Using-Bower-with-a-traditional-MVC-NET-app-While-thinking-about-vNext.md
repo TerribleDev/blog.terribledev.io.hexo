@@ -11,8 +11,8 @@ updated: '2015-09-12 18:05:13'
 date: 2015-03-23 21:44:29
 ---
 
-Where I work .NET rules supreme. Personally I really don't care that much about the technology so long as it supports really good workflows. One of my major issues with nuget is that is very opinionated. 
-
+Where I work .NET rules supreme. Personally I really don't care that much about the technology so long as it supports really good workflows. One of my major issues with nuget is that is very opinionated.
+<!-- more -->
 In nuget, js script files always end up dumping out to a `Scripts` folder, and while you can maintain your own scripts elsewhere, nuget just is not really great for client side JS as a whole.
 
 ## Why Bower?
@@ -115,7 +115,7 @@ You could also in theory get really silly (**Not Recommended**) and call grunt d
   <Target Name="BeforeBuild">
       <ItemGroup>
 		<Exec Command="npm install"/>
-		<Exec Command="node -e require('grunt').tasks()"/> 
+		<Exec Command="node -e require('grunt').tasks()"/>
   </ItemGroup>
   </Target>
 ```

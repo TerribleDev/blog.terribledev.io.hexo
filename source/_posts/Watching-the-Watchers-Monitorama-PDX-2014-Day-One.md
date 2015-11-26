@@ -18,10 +18,10 @@ I am here in lovely Portland Oregon attending [Monitorama](http://monitorama.com
 Monitorama had catered food, and drink. The food was plentiful and delicious, and the drinks were amazing.
 
 There were 10 talks, I have made a quick summarization below. I don't have time to write in detail about each one, but I am sure you will get the gist from the basic summary.
-
+<!-- more -->
 ## Please, no More Minutes, Milliseconds, Monoliths... or Monitoring Tools!
 
-The first talk from Adrian Crockford was about monitoring by the second as opposed to by the minute. [Gene Kim's notes](http://www.williamhertling.com/2014/05/adrian-cockcroft-on-monitoring-cloud.html) summarize it better than I do, but in short: focus more on monitoring tools for developers, monitor by the second, and learn to analyze the data properly. 
+The first talk from Adrian Crockford was about monitoring by the second as opposed to by the minute. [Gene Kim's notes](http://www.williamhertling.com/2014/05/adrian-cockcroft-on-monitoring-cloud.html) summarize it better than I do, but in short: focus more on monitoring tools for developers, monitor by the second, and learn to analyze the data properly.
 
 ## Computers are a Sadness, I am the Cure
 
@@ -37,12 +37,12 @@ He pushed for using algorithms with sliding means as a way to truely understand 
 
 ## The Care and Feeding of Monitoring
 
-Great talk from Katherine Daniels, about how everyone needs to work together better to monitor things. She noted that no one sets out to make bad decisions, but bad things sometimes happen because of decisions made. 
+Great talk from Katherine Daniels, about how everyone needs to work together better to monitor things. She noted that no one sets out to make bad decisions, but bad things sometimes happen because of decisions made.
 
 
 *We take some things, and put internets on them ~ Dan Slimmon*
 
-Dan Slimmon's talked a lot about alarms. Smoke detectors people pay attention to, but no one pays attention to car alarms. 
+Dan Slimmon's talked a lot about alarms. Smoke detectors people pay attention to, but no one pays attention to car alarms.
 
 He talked a lot about how to actually use probability statistics to understand how often someone will get phone called on an actual issue or not.
 

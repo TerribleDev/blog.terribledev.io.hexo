@@ -10,10 +10,10 @@ updated: '2014-03-19 20:05:33'
 date: 2014-03-19 19:57:16
 ---
 
-Capturing client side errors in my opinion is really good. For starters you can troubleshoot your client side implementation, but you can also make sure a js change did not break certain pages. 
+Capturing client side errors in my opinion is really good. For starters you can troubleshoot your client side implementation, but you can also make sure a js change did not break certain pages.
 
 Below is a really simple, yet effective way to capture errors. Eventually you may want to implement something more advanced, but this will get you out of the gate.
-
+<!-- more -->
 ```language-javascript
 window.onerror = function (errorMsg, url, lineNumber, column, error) {
     $.ajax('/api/Error', {
@@ -24,7 +24,7 @@ window.onerror = function (errorMsg, url, lineNumber, column, error) {
             Line: lineNumber,
             PageUrl: window.location.protocol + "//" + window.location.host + "/" + window.location.pathname,
             StackTrace: function (){return error ? error.stack: '';}
-            
+
         }
     });
 };

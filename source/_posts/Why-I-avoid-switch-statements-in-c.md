@@ -19,14 +19,14 @@ switch(s)
    case 0:
       doSomething();
       break;
-   case 1: 
+   case 1:
      doSomething1();
      break;
 
 }
 
 ```
-
+<!-- more -->
 Now the first thing that bothers me about C++ switch statements is that, you can fall through a case. What I mean by that is that if `case 0` did not have a `break;` statement, you will go directly into the next case (and execute `doSomething1()`)
 
 This often bites me in particular, becase I forget to add the `break;`

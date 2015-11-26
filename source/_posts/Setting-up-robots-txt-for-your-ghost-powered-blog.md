@@ -16,7 +16,7 @@ date: 2014-02-25 16:23:06
 ---
 
 Setting up your robots.txt file for your blog is easy, by adding a file called robots.txt in the root of your current themes directory.
-
+<!-- more -->
 `~/blogFolder/content/theme/Casper`
 
 If you are unfamiliar with linux, to do this simply cd to the directory and run the command `sudo vi robots.txt` Press i (for insert mode), type your entry (example farther down in this blog), press esc, then type `:wq` (w stands for write, q stands for quit). Then hit enter
