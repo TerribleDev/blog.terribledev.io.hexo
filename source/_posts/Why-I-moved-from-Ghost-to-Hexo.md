@@ -2,6 +2,7 @@ title: Why I moved from Ghost to Hexo
 tags:
   - Ghost
   - Blog
+  - Hexo
 date: 2015-11-25 20:36:56
 ---
 
