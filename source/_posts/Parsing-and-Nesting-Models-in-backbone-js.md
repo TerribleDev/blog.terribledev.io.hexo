@@ -14,7 +14,7 @@ date: 2014-02-24 02:18:51
 
 ## The Parse Function
 The parse function allows you to do some pre-processing of the data sent from the server before the model is created. Parse should return an object containing the values that will make up this models attribues. This is called after the fetch command has recieved the data, but before the response is put into the model. The example below parses dates to local time before adding them to the model using  [moment](http://momentjs.com/).
-
+<!-- more -->
 ```javascript
 
 namespace.Model = Backbone.Model.extend({

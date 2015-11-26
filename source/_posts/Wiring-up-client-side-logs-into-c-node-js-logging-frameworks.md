@@ -15,7 +15,7 @@ Around a year ago I joined a new team where I work, and this team was starting t
 Early one one of the **huge** things to do was to make sure that our JavaScript error logs could land in our Log4Net infrastructure. I started to write something to do just that, and as I was coding I quickly realized this was less trivial that it sounded. We had something internal we could use, but it was tied to a lot of other code that we didn't want to pull in.
 
 I started Bingling around and I stumbled across [jsnlog](http://jsnlog.com/). JSN log lets you quickly wire up your client side logs to your server. I have been able to get PR's into the [code base](https://github.com/mperdeck/jsnlog) and the guy behind it has been very friendly to me when I have had questions.
-
+<!-- more -->
 When you install the nuget package it drops this into your app_start.
 
 ```csharp
@@ -30,13 +30,13 @@ using System.Web.Mvc;
 namespace EmptyLog4Net.App_Start {
     public static class JSNLogConfig {
         public static void PostStart() {
-            // Insert a route that ignores the jsnlog.logger route. That way, 
+            // Insert a route that ignores the jsnlog.logger route. That way,
 			// requests for jsnlog.logger will get through to the handler defined
             // in web.config.
 			//
-			// The route must take this particular form, including the constraint, 
+			// The route must take this particular form, including the constraint,
 			// otherwise ActionLink will be confused by this route and generate the wrong URLs.
-			
+
             var jsnlogRoute = new Route("{*jsnloglogger}", new StopRoutingHandler());
             jsnlogRoute.Constraints = new RouteValueDictionary {{ "jsnloglogger", @"jsnlog\.logger(/.*)?" }};
             RouteTable.Routes.Insert(0, jsnlogRoute);
@@ -61,21 +61,21 @@ You can also set jsnlog as the global js error handler.
 
 ```language-javascript
 window.onerror = function (errorMsg, url, lineNumber, column, errorObj) {
-    // Send object with all data to server side log, using severity fatal, 
+    // Send object with all data to server side log, using severity fatal,
     // from logger "onerrorLogger"
     JL("onerrorLogger").fatalException({
-        "msg": "Exception!", 
-        "errorMsg": errorMsg, "url": url, 
+        "msg": "Exception!",
+        "errorMsg": errorMsg, "url": url,
         "line number": lineNumber, "column": column
     }, errorObj);
-        
+
     // Tell browser to run its own error handler as well   
     return false;
 }
 
 ```
 
-The docs are quite good, and it seems to work fine as a commonjs module (since we browserify things). The tool is super configurable through the web.config, and you can change the url it logs to. 
+The docs are quite good, and it seems to work fine as a commonjs module (since we browserify things). The tool is super configurable through the web.config, and you can change the url it logs to.
 
 
 ```markup

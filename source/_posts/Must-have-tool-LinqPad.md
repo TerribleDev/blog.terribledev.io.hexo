@@ -12,7 +12,7 @@ date: 2014-04-14 22:59:46
 ---
 
 [LinqPad](http://linqpad.net) is an interactive C#/F#/VB.NET scratchpad that lets you run arbitrary C#/F#/VB.NET code, and also lets you query databases with linq.
-
+<!-- more -->
 ## What did that method do again?
 
 We have all been there....its way past your bedtime, and you cannot for the life of you remember what happens when string.Concat is called. You could try to just run something quick in your project to find out, but that would take time to build. You could google the result, and hope you can find the answer quickly....Or you can open linqpad and run the method!

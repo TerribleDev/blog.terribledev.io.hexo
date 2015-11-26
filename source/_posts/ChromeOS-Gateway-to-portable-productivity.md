@@ -11,7 +11,7 @@ date: 2014-04-29 16:00:01
 ---
 
 Up until the last few years the only devices on the market were all full operating system work horses. However the majority of us would easily sacrifice functionality for portability. This statement has been backed up by the increase of market demand for tablets and ultrabooks over the years.
-
+<!-- more -->
 ## Netbook Past
 
 When netbooks first came out they were running Window XP with an Intel Atom Processor. I was one of the early adopters, getting a first model Aspire One, and at the time I was blown away. I remember comparing it to the first ASUS EE, and the other offerings at the time.

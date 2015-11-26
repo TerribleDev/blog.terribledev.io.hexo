@@ -18,13 +18,14 @@ I'm not very qualified as a blogger, quite frankly my English skills are terribl
 
 My perspective is not very unique at this point. The industry is full of developer/sysadmin employees, and devops has become an industry movement. This movement has created in my opinion a 'trendy effect' to what some would consider little more than a buzz word.
 
+<!-- more -->
 
 #### DevOps the modern exorcist?
 
 
  Many years ago the catholic church would perform exorcisms on people whom they deemed to be possessed by the devil. The people who would do these works, were not high up in the ranks of the church. However the work they did both mysterious, and possibly dangerous is at the same time totally enticing. This lead to the popularization of what we see now as an exorcist.
- 
- Currently DevOps is starting to take on the same popularity. The chance to tackle a problem such as proper monitoring, task automation, etc. really seems sexy to other developers. Having to work on the same website, or the same payments system every day, becomes tedious. However, coming into the office and tackling real infrastructure problems, at break neck speed is   very desirable for traditional developers. People must understand, that DevOps personnel are not far superior than sysadmin/developer/qa, but simply tackling 3 jobs at the same time. 
+
+ Currently DevOps is starting to take on the same popularity. The chance to tackle a problem such as proper monitoring, task automation, etc. really seems sexy to other developers. Having to work on the same website, or the same payments system every day, becomes tedious. However, coming into the office and tackling real infrastructure problems, at break neck speed is   very desirable for traditional developers. People must understand, that DevOps personnel are not far superior than sysadmin/developer/qa, but simply tackling 3 jobs at the same time.
 
 
 #### Technology today, and Service Oriented Arch.

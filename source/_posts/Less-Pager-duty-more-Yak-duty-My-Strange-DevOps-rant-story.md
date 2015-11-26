@@ -10,7 +10,7 @@ date: 2015-09-28 01:34:03
 ---
 
 Growing up I always wanted to work with electronics, and as soon as I could work I was working with a computer. I currently work as a Software Engineer at [Vistaprint](http://vistaprint.com). I work on the Gallery team, which is an agile development team that works on our platform to display products in a gallery (hence the name). Before I joined the gallery team, I spent most of my career doing ops things.
-
+<!-- more -->
 When I started working in the industry I was really interested in working with scaled out infrastructure. Any large compute things I had an interest in, which lead me to be more or less an 'Ops' person. Over the course of this period I did quite a bit of networking, VMware, and LDAP administration. My first real gig was working for a school district. Staff, and students combined was 6000, and we quickly realized the only way for our team of 3 to be effective was to write code. This was my first real introduction into programming (yup, I was a late bloomer to programming).
 
 I always thought programming was something done by PhD types, and I never thought I'd be smart enough to do it. I didn't have the privilege of going to a great University. In fact I got my degree while working in the Industry, this left me with a lot of insecurities early on in my career. I am a creative person, and I always thought I'd be good as a full stack Web Developer. I tried to learn JavaScript in 2005, and decided that programming was too hard, not realizing that js, and the DOM API's were working against me.

@@ -14,7 +14,7 @@ date: 2014-03-11 01:44:06
 <span style="float: left">[Part 1: Banner Ads <i class="fa fa-hand-o-left"></i>](https://blog.tommyparnell.com/admob-with-xamarin-part-1-banner-ads/)</span><br />
 
 Interested in Interstital ads, but not banner? Thats ok, but I recommend your read my first post about [banner ads](https://blog.tommyparnell.com/admob-with-xamarin-part-1-banner-ads/). The first steps, installing Google Play Services, altering your permissions, adding to your manifests files, and reviewing my [github demo](https://github.com/tparnell8/XamarinAdmobTutorial) are located in that tutorial.
-
+<!-- more -->
 ## The Basics
 
 The very basic amount of code to do Interstitial Ad's are below
@@ -31,7 +31,7 @@ The problem with the above code is it tries to show the ad right away, but the a
 
 ## Doing things better
 
-Back to my github code, the Adwrapper class contains build methods for *full page ad* aka Interstitial. 
+Back to my github code, the Adwrapper class contains build methods for *full page ad* aka Interstitial.
 
 ```clike
 using Android.App;
@@ -54,7 +54,7 @@ namespace admobDemo.AndroidPhone.ad
             ad.AdUnitId = UnitID;
             return ad;
         }
-        
+
           public static InterstitialAd CustomBuild(this InterstitialAd ad)
         {
             var requestbuilder = new AdRequest.Builder();
@@ -77,14 +77,14 @@ namespace admobDemo
 {
     class adlistener : AdListener
     {
-        // Declare the delegate (if using non-generic pattern). 
+        // Declare the delegate (if using non-generic pattern).
         public delegate void AdLoadedEvent();
         public delegate void AdClosedEvent();
         public delegate void AdOpenedEvent();
 
 
 
-        // Declare the event. 
+        // Declare the event.
         public event AdLoadedEvent AdLoaded;
         public event AdClosedEvent AdClosed;
         public event AdOpenedEvent AdOpened;
@@ -150,6 +150,6 @@ namespace admobDemo.AndroidPhone
 
 ```
 
-To walk you through the code...after `SetContentView()`....We make a full page Ad *(and pass it our AD id)*, we create an event listener based on the ad listener class. We set the event listener to trigger an annonymous function that will show the ad. we make the Ad's event listener to be the event listener we made, then we run CustomBuild which builds the Ad and starts loading the Ad. Once the ad loads it will call the event handler, and Boom! Show the ad to the user. 
+To walk you through the code...after `SetContentView()`....We make a full page Ad *(and pass it our AD id)*, we create an event listener based on the ad listener class. We set the event listener to trigger an annonymous function that will show the ad. we make the Ad's event listener to be the event listener we made, then we run CustomBuild which builds the Ad and starts loading the Ad. Once the ad loads it will call the event handler, and Boom! Show the ad to the user.
 
 Obviously this is a basic implementation, and showing the ad when the app first starts may, or may not be the best stratergy for **You**.

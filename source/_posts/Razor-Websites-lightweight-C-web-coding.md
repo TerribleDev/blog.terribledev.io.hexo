@@ -2,14 +2,14 @@ title: 'Razor Websites, lightweight C# web coding'
 tags:
 
   - c#
-  - asp.net
+  - aspnet
 permalink: razor-websites-super-lightweight-c-webdev
 id: 49
 updated: '2015-10-02 17:00:33'
 date: 2015-09-03 17:56:34
 ---
 
-I was exploring around github, and I stumbled upon an interesting project called [Miniblog](https://github.com/madskristensen/miniblog) which was a lightweight blog engine written in c#. The thing that immediately stood out to me was the lack of a `.csproj` file. 
+I was exploring around github, and I stumbled upon an interesting project called [Miniblog](https://github.com/madskristensen/miniblog) which was a lightweight blog engine written in c#. The thing that immediately stood out to me was the lack of a `.csproj` file.
 
 >As I dug around the code I realized this was not a Web App, which most of us were familiar with, but a websites project. I then suddenly realized that the whole thing only used razor!
 
@@ -18,7 +18,7 @@ I am a huge fan of [Nancyfx](http://nancyfx.org/) because its much more lightwei
 I decided to dig around on the internet to see if anyone else was talking about this. I found out quickly that it has been possible for [some time](http://www.hanselman.com/blog/ExploringASPNETWebPagesAFullyfeaturedMiniBlogUsingJustRazor.aspx), but I didn't find many references about it.
 
 The one thing that bummed me out about the Miniblog example was that it was not a web app. You can use nuget packages will websites, but you cannot make references to other projects in the solution. This was a problem for me, and unlike websites, web app's are precompiled which reduces application startup time.
-
+<!-- more -->
 ## Why use Razor Websites?
 
 The biggest reason to use razor websites, is the speed. Razor websites have almost no routing code, and are much more lightweight than a full framework. They are good for small projects, but for complex data access applications a more robust framework should be used.

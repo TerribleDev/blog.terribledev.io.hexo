@@ -7,7 +7,7 @@ date: 2015-11-25 20:36:56
 
 
 Blogging right? I can't believe I somehow stuck with it all this time. Even when I took a long break I still kinda blogged. I got started after being ~~convinced~~ inspired by a [coworkers](http://blog.normmaclennan.com) passion to start blogging. To say the least he, and I have very similar tastes, and he turned me on to ghost, and the ghostium theme. After a year and a half of Ghost blogging I have left Ghost.
-
+<!-- more -->
 ## Why I still love Ghost
 
 I was a huge supporter of Ghost from the start. Especially, since at the time my options were Jekyll, Wordpress, or Ghost. I hopped on when it was very new (I think I was on the second release of ghost). Ghost was the engine to really popularize the minimalist blog editor experience. The editor panel is just a editor on the left and a preview pane on the right. When compared to something like wordpress, Ghost really shines as the minimalist approach.
@@ -34,4 +34,4 @@ I was looking at Octopress (aka Jekyll), Hugo, and a few others. I found some aw
 
 ## Why I would still recommend Ghost
 
-I would say ghost is still an incredible to use blog engine. For people intimidated by CLI tools, or who don't understand how SCM works, ghost is for you. Ghost is a very minimal, easy to use blog engine. I never felt held back by ghost, and I always felt inspired to write when using it. Ghost performs well and the community is awesome. 
+I would say ghost is still an incredible to use blog engine. For people intimidated by CLI tools, or who don't understand how SCM works, ghost is for you. Ghost is a very minimal, easy to use blog engine. I never felt held back by ghost, and I always felt inspired to write when using it. Ghost performs well and the community is awesome.

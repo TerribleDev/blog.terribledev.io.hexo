@@ -16,7 +16,7 @@ So I was quite confused about hosting Nancyfx on OWIN under IIS. [Parts](https:/
 Here is the simple guide.
 
 Make sure you Install the following nuget packages (if you havn't already).
-
+<!-- more -->
 ```
 Nancy.Owin
 Microsoft.Owin.Host.SystemWeb
@@ -24,7 +24,7 @@ Microsoft.Owin.Host.SystemWeb
 ```
 
 
-Owin uses a class called Startup.cs to do basic configuration. We need to add nancy to the app, and then add additional StageMarkers used by the ASP pipeline. 
+Owin uses a class called Startup.cs to do basic configuration. We need to add nancy to the app, and then add additional StageMarkers used by the ASP pipeline.
 
 Startup.cs
 
@@ -164,4 +164,3 @@ public class Bootstrapper : DefaultNancyBootstrapper
 }
 
 ```
-

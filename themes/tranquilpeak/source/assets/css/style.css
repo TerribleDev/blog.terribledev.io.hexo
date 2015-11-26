@@ -2188,7 +2188,7 @@ body {
   padding: 0;
   background: white;
   font-family: "Open Sans", sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   line-height: 1.85em;
   letter-spacing: 0.01em;
   -webkit-font-smoothing: subpixel-antialiased;
@@ -2203,7 +2203,7 @@ h4,
 h5,
 h6 {
   letter-spacing: -0.04em;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 700;
   line-height: 1.45em;
   color: #4a4a4a; }
@@ -2279,7 +2279,7 @@ dl dd {
 
 code {
   display: inline-block;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-weight: 400;
   border-radius: 3px;
   background: #f5f5f5;
@@ -2659,7 +2659,7 @@ blockquote {
       transform: translate3d(75px, 0, 0); } }
 
 #sidebar {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   height: 100%;
   position: fixed;
   top: 0;
@@ -3108,7 +3108,7 @@ blockquote {
 
 .caption {
   display: block;
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   font-size: 1.25rem;
   color: #81929d;
   text-align: center;
@@ -3207,13 +3207,13 @@ a.category--small,
   width: calc(75% - 4px); }
 
 .figure.fig-100, .figure.center {
-  width: calc(100% - 4px); }
+  width: calc(100% - 4px);
+  margin: 2px; }
 
 .figure.figure--fullWidth {
   width: 100%; }
   .figure.figure--fullWidth .figure-img {
-    margin: 0 auto;
-    border-radius: 0px !important; }
+    margin: 0 auto; }
 
 @media only screen and (max-width: 767px) {
   .fig-33 .caption, .fig-25 .caption, .fig-20 .caption {
@@ -3261,7 +3261,6 @@ figure.highlight {
   border-radius: 3px;
   line-height: 1.2em;
   color: #333;
-  font-family: Menlo;
   border: 1px solid #d9d9d9;
   overflow: hidden; }
   figure.highlight table {
@@ -3273,6 +3272,7 @@ figure.highlight {
   figure.highlight .gutter,
   figure.highlight .code,
   figure.highlight .tag {
+    font-family: Menlo;
     border: none;
     padding: 0;
     margin: 0;
@@ -3283,7 +3283,7 @@ figure.highlight {
     margin: 0;
     background: #f7f7f7;
     border-bottom: 1px solid #d9d9d9;
-    color: #999; }
+    color: #999999; }
     figure.highlight figcaption a {
       float: right; }
   figure.highlight .gutter {
@@ -3291,7 +3291,7 @@ figure.highlight {
     border-right: 1px solid #d9d9d9;
     padding: 0.3em 0.5em; }
     figure.highlight .gutter .line {
-      color: #aaa; }
+      color: #aaaaaa; }
   figure.highlight .code {
     padding: 0.3em 0.3em 0.3em 1em; }
   figure.highlight .line {
@@ -3300,8 +3300,8 @@ figure.highlight {
 
 .gist .line,
 .gist .line-number {
-  font-size: Menlo;
-  font-family: 1em;
+  font-family: Menlo;
+  font-size: 1em;
   margin: 0 0 5px 0; }
 
 .highlight .comment {
@@ -3685,7 +3685,7 @@ figure.highlight {
     position: absolute;
     bottom: 0;
     width: calc(100% - (1.5em) * 2);
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
     font-style: italic;
     background: rgba(0, 0, 0, 0.75);
     font-size: 1.25rem;
@@ -3733,6 +3733,9 @@ a.link-unstyled a.link,
 a.link-unstyled a.link:hover,
 a.link-unstyled a.link:active {
   text-decoration: underline !important; }
+
+a.fancybox {
+  cursor: zoom-in !important; }
 
 .main-content-wrap {
   display: block;
@@ -3816,28 +3819,24 @@ a.link-unstyled a.link:active {
       text-decoration: none; }
   .post .post-meta {
     line-height: 1.5em;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 1.25rem;
     font-weight: 400;
     color: #9eabb3; }
     .post .post-meta a {
       color: #9eabb3; }
   .post .post-content {
-    font-family: 'Merriweather', serif;
+    font-family: "Merriweather", serif;
     color: #5d686f;
     margin-top: 60px;
-    font-weight: 400;
+    font-weight: 300;
     overflow: hidden;
-    word-break: break-word;
-    -ms moz-word-break: "break-all";
-    word-break: "break-all";
-    -webkit moz-hypens: "auto";
-    hypens: "auto"; }
+    -webkit moz-hypens: auto;
+    hypens: auto; }
     .post .post-content img {
       display: block;
       width: auto;
-      max-width: 100%;
-      border-radius: 3px; }
+      max-width: 100%; }
   .post .post-footer {
     margin-top: 20px; }
     .post .post-footer-tags {
@@ -3940,7 +3939,7 @@ a.link-unstyled a.link:active {
         text-decoration: none; }
     .post-header-cover .post-header .post-meta {
       max-width: 750px;
-      font-family: 'Merriweather', serif;
+      font-family: "Open Sans", sans-serif;
       font-size: 1.5rem;
       color: white !important;
       font-weight: 400;
@@ -4051,44 +4050,65 @@ a.link-unstyled a.link:active {
   .postShorten .postShorten-meta,
   .postShorten .postShorten-readingtime,
   .postShorten .postShorten-excerpt_link {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 1.25rem;
     font-weight: 400; }
   .postShorten .postShorten-excerpt,
   .postShorten .postShorten-content {
-    font-family: 'Merriweather', serif;
+    font-family: "Merriweather", serif;
     color: #5d686f;
-    font-weight: 400;
+    font-weight: 300;
     overflow: hidden;
-    word-break: break-word;
-    -ms moz-word-break: "break-all";
-    word-break: "break-all";
-    -webkit moz-hypens: "auto";
-    hypens: "auto"; }
+    -webkit moz-hypens: auto;
+    hypens: auto; }
+    .postShorten .postShorten-excerpt img,
+    .postShorten .postShorten-content img {
+      display: block;
+      width: auto;
+      max-width: 100%; }
   .postShorten .postShorten-excerpt {
     margin-top: 15px; }
   .postShorten .postShorten-content {
     margin-top: 25px; }
 
-@media only screen and (max-width: 767px) {
-  .postShorten-thumbnailimg {
+@media only screen and (max-width: 479px) {
+  .postShorten .postShorten-thumbnailimg {
     display: none; }
-    .postShorten-thumbnailimg img {
+    .postShorten .postShorten-thumbnailimg img {
       display: none; } }
 
 @media only screen and (min-width: 480px) {
-  .postShorten.postShorten--thumbnailimg .postShorten-thumbnailimg {
-    display: inline-block;
-    margin: 15px 0 30px 15px;
-    vertical-align: top; }
-    .postShorten.postShorten--thumbnailimg .postShorten-thumbnailimg img {
+  .postShorten.postShorten--thumbnailimg-right .postShorten-thumbnailimg {
+    float: right;
+    margin: 5px 0 30px 15px; }
+    .postShorten.postShorten--thumbnailimg-right .postShorten-thumbnailimg img {
       display: block;
       width: 140px;
-      height: 140px;
-      border-radius: 3px; }
-  .postShorten.postShorten--thumbnailimg .postShorten-wrap {
-    display: inline-block;
-    width: calc(100% - 140px - 20px); } }
+      height: 140px; }
+  .postShorten.postShorten--thumbnailimg-right .postShorten-wrap {
+    float: left;
+    width: calc(100% - 140px - 20px); }
+  .postShorten.postShorten--thumbnailimg-left .postShorten-thumbnailimg {
+    float: left;
+    margin: 5px 15px 30px 0; }
+    .postShorten.postShorten--thumbnailimg-left .postShorten-thumbnailimg img {
+      display: block;
+      width: 140px;
+      height: 140px; }
+  .postShorten.postShorten--thumbnailimg-left .postShorten-wrap {
+    float: right;
+    width: calc(100% - 140px - 20px); }
+  .postShorten.postShorten--thumbnailimg-bottom .postShorten-wrap {
+    display: block;
+    width: 100%; }
+  .postShorten.postShorten--thumbnailimg-bottom .postShorten-thumbnailimg {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    margin: 15px 0 15px 0; }
+    .postShorten.postShorten--thumbnailimg-bottom .postShorten-thumbnailimg img {
+      width: auto;
+      height: auto; } }
 
 .share-options-bar {
   position: fixed;

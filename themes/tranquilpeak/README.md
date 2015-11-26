@@ -2,7 +2,7 @@
 
 A gorgeous responsive theme for Hexo blog framework 
 
-![Tranquilpeak](http://res.cloudinary.com/tranquilpeak-hexo-theme/image/upload/v1439030688/v1.3.0-showcase.png)
+![Tranquilpeak](http://d1u9biwaxjngwg.cloudfront.net/showcases/showcase-v1.4.jpg)
 
 ## Summary ##
 
@@ -20,7 +20,7 @@ A gorgeous responsive theme for Hexo blog framework
 ## General ##
 
 - **Author** : Louis Barranqueiro
-- **Version** : 1.3.0  
+- **Version** : 1.4.3  
 - **Compatibility** : Hexo 3.0.0 or later
 
 ## Features ##
@@ -59,8 +59,8 @@ A gorgeous responsive theme for Hexo blog framework
 
 **Please read [user documentation](https://github.com/LouisBarranqueiro/tranquilpeak-hexo-theme/blob/master/docs/user.md), it's short and useful to discover all features and possibilities of the theme, especially the  [writing posts](https://github.com/LouisBarranqueiro/tranquilpeak-hexo-theme/blob/master/docs/user.md#writing-posts) section**
 ##### For people who want to use the original version of Tranquilpeak (users) 
-1. Download the latest version ready for production utilisation here : [tranquilpeak-hexo-theme-built-for-production-1.3.0]
-(https://github.com/LouisBarranqueiro/tranquilpeak-hexo-theme/releases/download/v1.3.0/tranquilpeak-hexo-theme-built-for-production-1.3.0.zip) or choose an other version here : [all releases](https://github.com/LouisBarranqueiro/tranquilpeak-hexo-theme/releases)  
+1. Download the latest version ready for production utilisation here : [tranquilpeak-hexo-theme-built-for-production-1.4.3]
+(https://github.com/LouisBarranqueiro/tranquilpeak-hexo-theme/releases/download/v1.4.3/tranquilpeak-hexo-theme-built-for-production-1.4.3.zip) or choose an other version here : [all releases](https://github.com/LouisBarranqueiro/tranquilpeak-hexo-theme/releases)  
 2. Follow [user documentation](https://github.com/LouisBarranqueiro/tranquilpeak-hexo-theme/blob/master/docs/user.md) to install and configure the theme  
 
 ##### For people who want to create their own version of tranquilpeak (developers)
@@ -78,12 +78,6 @@ If you have customized the original version, please, add your blog into.
 
 ##### Via an issue
 1. Create an issue with your blog url and a short description of your changes by clicking [here](https://github.com/LouisBarranqueiro/tranquilpeak-hexo-theme/issues/new?title=Add%20my%20blog%20into%20showcase&body=Hey,%20check%20out%20my%20custom%20version%20of%20Tranquilpeak%20:%0D%0A*%20URL%20:%20%0D%0A*%20Changes%20(short%20description)%20:%20)  
-
-##### Via a pull request
-1. Fork the project  
-2. On the master branch, add your blog URL, a short description of your changes and your github name into `SHOWCASE.md` file  
-3. Respect the format : `[url_of_your_blog](url_of_your_blog) - short_description_of_your_changes - [github_name](url_of_your_github_page)`  
-4. Create a pull request on the master branch   
 
 I will judge if the theme is enough customized to be added into showcase.
 

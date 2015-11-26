@@ -8,7 +8,7 @@ tags:
 
 Getting started with anti-forgery tokens in NancyFX with razor views is pretty simple.
 
-To start you need to enable csrf in application startup. 
+To start you need to enable csrf in application startup.
 
 ```csharp
 
@@ -32,7 +32,7 @@ Now you need to create a token on the get request that returns the form
                 return View["Index"];
             };
 
-
+<!-- more -->
 ```
 
 Now in your view you need to render the token

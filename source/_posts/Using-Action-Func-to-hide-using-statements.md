@@ -11,7 +11,7 @@ date: 2014-07-06 03:56:02
 ---
 
 Ok so to give you all some background. I always write my data access with a repository pattern in c#. Now I often use dapper, however I'd guess this problem would also apply with Entity framework.
-
+<!-- more -->
 Everytime I start writing my database access I always start with something like...
 
 ```csharp
@@ -43,7 +43,7 @@ So basically we create our db class passing in the type of database connection w
 ```csharp
  var db = new DataBase<SqlConnection>("connectionstring");
  var result = db.QueryDatabaseAsync(x => x.QueryAsync<MyReturnType>("MySproc",
-               
+
                 new
                 {
                     MySprocParameter = "awesome"
@@ -84,4 +84,4 @@ public TResult QueryDatabase<TResult>(Func<T, TResult> action)
 
 ### Action< T >
 
-`Action<T>` is essentially the same as `Func<T,TR>` execpt actions do not have a return type. This would be more like a void than anything else. The T is a passed in parameter to the function. So you can pass in something like a database connection, but you will not have a return. Simple use case sql insert statement. 
+`Action<T>` is essentially the same as `Func<T,TR>` execpt actions do not have a return type. This would be more like a void than anything else. The T is a passed in parameter to the function. So you can pass in something like a database connection, but you will not have a return. Simple use case sql insert statement.

@@ -11,7 +11,7 @@ date: 2015-08-09 10:25:49
 ---
 
 Resharper has long dominated the c# landscape as the tool of tools. Roslyn shipping with VS 2015, the quick actions light bulb, and the community analyzers, all combine to produce a resharper-like experience.
-
+<!-- more -->
 ## Showing Overloads/Param Info
 
 Automatically showing documentation for parameters, and overloads for some reason is always off for me. To get the parameters information you must turn it in in `Text Editor -> Lanuage -> General -> Parameter Info` The parameter info should show auto-magically, but you can also type <kbd>Control</kbd> +<kbd>Shift</kbd>+<kbd>Space</kbd> to invoke the dialog.
@@ -25,24 +25,24 @@ Automatically showing documentation for parameters, and overloads for some reaso
 
 Refactoring is a **huge** part of Resharper. I recently stumbled across a [fantastic] refactoring extension called [Refactoring Essentials](http://vsrefactoringessentials.com/)
 
-You can install this into your project as a nuget package or install it as a visual studio extension. 
+You can install this into your project as a nuget package or install it as a visual studio extension.
 
 Refactoring Essentials does not just include refactors, but it also includes a bunch of code quality analyzers, and adjustments.
 
 ## Code Analysis
 
-There are 2 fantastic code analyzers I really enjoy. The first is [Code Cracker](http://code-cracker.github.io/) Code cracker has lots of refactorizations to produce higher quality, more readable code. 
+There are 2 fantastic code analyzers I really enjoy. The first is [Code Cracker](http://code-cracker.github.io/) Code cracker has lots of refactorizations to produce higher quality, more readable code.
 
 The second one I like is the [FxCop](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) analyzer produced by the Roslyn team. This one uses rules from FxCop to produce refactors to suit best practices in the CLR.
 
 ## Auto Format
 
-I have had good luck with the [Continuous Formatting](https://vlasovstudio.com/continuous-formatting/), but its a paid product. If you don't want to pay for code formatting, I'd suggest using the [Code Maid](http://www.codemaid.net/) Extension. Both extensions are fantastic, and I think Code Maid does a really good job at reorganizing code. To say the least I have both extensions installed. 
+I have had good luck with the [Continuous Formatting](https://vlasovstudio.com/continuous-formatting/), but its a paid product. If you don't want to pay for code formatting, I'd suggest using the [Code Maid](http://www.codemaid.net/) Extension. Both extensions are fantastic, and I think Code Maid does a really good job at reorganizing code. To say the least I have both extensions installed.
 
 ## Working without resharper
 
 
-The first thing that I realized is that intellisense does not auto complete as many classes as resharper. I notice that resharper auto completes classes even without any `using` statement in the current file. However the new Roslyn quick actions will suggest using things from different namespaces if the names are close enough. 
+The first thing that I realized is that intellisense does not auto complete as many classes as resharper. I notice that resharper auto completes classes even without any `using` statement in the current file. However the new Roslyn quick actions will suggest using things from different namespaces if the names are close enough.
 
 ![](/content/images/2015/08/usingStatementExample.png)
 

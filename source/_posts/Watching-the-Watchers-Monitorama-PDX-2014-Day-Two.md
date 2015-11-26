@@ -14,7 +14,7 @@ date: 2014-05-07 10:48:55
 
 Day 2 was full of math based paranoia, math, and puppet(s)....
 
-
+<!-- more -->
 ## Auditing all the things": The future of smarter monitoring and detection
 
 Jen Andre started off with a talk about auditd, and how to audit everything in your frinastructure. Using custom logging tools you can watch the command flow for every logged in session, even when the session su's to a different user.
@@ -25,7 +25,7 @@ DSP (Digital Signal Processing) applied to monitoring data, could convert a very
 
 ## A Melange of Methods for Manipulating Monitored Data
 
-Dr Neil J. Gunther talked about how he is applying maths (yes plural :P) to gathered data metrics. He points out that you should never trust your data (even if it was gathered acuratly), and always trust in your instincts. 
+Dr Neil J. Gunther talked about how he is applying maths (yes plural :P) to gathered data metrics. He points out that you should never trust your data (even if it was gathered acuratly), and always trust in your instincts.
 
 ## The Final Crontab
 
@@ -45,13 +45,13 @@ Etsy is able to deploy their application at any moment in time. Doing this requi
 
 ## Wiff: The Wayfair Network Sniffer
 
-Wireshark as a Service, wiff is a network traffic logging tool developed at wayfair. Able to log traffic throughout the network layer, wiff is able to help you understand your network traffic. 
+Wireshark as a Service, wiff is a network traffic logging tool developed at wayfair. Able to log traffic throughout the network layer, wiff is able to help you understand your network traffic.
 
 According to the presenter Dan Rowe, wiff helped wayfair detect a bug in their cookie generating algorithm.
 
 ## Web performance observability
 
-[Web Rockit](http://webrockit.io/) is a simple tool that detects web loading performace. The tool uses Phantom.js (headless webkit browser) to load the page and gather statistics during the load. These statistics can help you determine what is going on when your webpage loads. 
+[Web Rockit](http://webrockit.io/) is a simple tool that detects web loading performace. The tool uses Phantom.js (headless webkit browser) to load the page and gather statistics during the load. These statistics can help you determine what is going on when your webpage loads.
 
 ## Lightning Talks
 
@@ -59,4 +59,4 @@ The one talk that stood out to me at the lightning talks is never manage your so
 
 ## Puppet Afterparty
 
-While the line for the beer was long, and the food was in short supply the puppet party was amazing. Ping pong filled the air, whilst tech nerds played board games. The people that work at puppet were very friendly and eager to talk about programming. 
+While the line for the beer was long, and the food was in short supply the puppet party was amazing. Ping pong filled the air, whilst tech nerds played board games. The people that work at puppet were very friendly and eager to talk about programming.

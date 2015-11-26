@@ -1,8 +1,8 @@
 title: How the ASP.NET team made the web framework I have always wanted
-tags: 
+tags:
   - c#
-  - asp.net 5
-  - asp.net
+  - aspnet 5
+  - aspnet
   - nuget
   - open source
   - JavaScript
@@ -13,7 +13,7 @@ date: 2015-11-14 07:42:42
 ---
 
 So I know I do a lot of blogging about C#, or JavaScript, but I actually do a lot of nodejs apps as well as other languages. For a very long time I have not found the stack of my dreams. .NET has always been very close but there were multiple things about the app model that I was not a fan of. I think NancyFX has been the closest framework to my dreams in .NET land.
-
+<!-- more -->
 
 ## .NET 4x and my gripes
 

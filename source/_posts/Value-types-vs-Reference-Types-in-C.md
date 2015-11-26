@@ -3,7 +3,7 @@ tags:
 
   - c#
   - Tutorial
-  - .net
+  - dotnet
 permalink: value-types-vs-reference-types-in-c-and-why-it-matters
 id: 27
 updated: '2015-07-26 01:08:11'
