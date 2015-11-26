@@ -2,6 +2,7 @@ title: Hosting hexo in azure webapps
 tags:
   - Azure
   - IIS
+  - Hexo
 date: 2015-11-26 11:20:42
 ---
 
