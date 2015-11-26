@@ -28,7 +28,6 @@ deploy.cmd
 
 We just need to configure IIS. Drop a file called web.config at the root of your blog. Add the following markup.
 
-markup
 ```xml
 
 <configuration>
