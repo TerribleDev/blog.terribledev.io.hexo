@@ -71,4 +71,6 @@ markup
 
 ```
 
-This markup will redirect all requests to the public folder, and it will enable newer fonts (like woff). This will also force a trailing slash.
+This markup will redirect all requests to the public folder, and it will enable newer fonts (like woff). This will also force a trailing slash. Now git commit the project and have azure pick up the files from github/bitbucket/git, etc.
+
+If you need to see a complete example of this, grab the [code for this blog](https://github.com/tparnell8/blog.tparnell.io).
