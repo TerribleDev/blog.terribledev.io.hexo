@@ -4,6 +4,7 @@ tags:
   - Ghost
   - Hexo
   - Blog
+thumbnailImage: thumbnail.png
 ---
 I recently ported my ghost blog to hexo, and it was pretty easy.
 <!-- excerpt -->
