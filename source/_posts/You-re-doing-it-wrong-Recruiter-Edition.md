@@ -32,9 +32,9 @@ Ultimately you should try to get them excited to work at your company. Free beer
 
 ### First Contact
 
-{<1>}![First Contact](/content/images/2014/Feb/968full_star_trek__first_contact_screenshot.jpg)
+![First Contact](/content/images/2014/Feb/968full_star_trek__first_contact_screenshot.jpg)
 
-####Do
+#### Do
 * Address the candidate with the name they have listed on websites/resumes
 * Present clearly what you are looking for, and what you are not looking for
 * Ask them what their future goals are
@@ -43,7 +43,7 @@ Ultimately you should try to get them excited to work at your company. Free beer
 * Be honest about the job, they will leave if they find out it was not what you said it was
 
 
-####Don'ts
+#### Don'ts
 * Assume their name is a nickname (ex. addressing someone named Dave, as David)
 * Contact someone asking for qualifications that are clearly not listed on their resume
 * Being unprepared during an interview (phone or otherwise)

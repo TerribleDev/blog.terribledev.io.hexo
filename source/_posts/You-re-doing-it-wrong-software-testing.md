@@ -32,7 +32,7 @@ If you suspect that a patch is causing performance problems, but you are unable 
 
 If you have to test in prod try to patch a few servers and see what happens. Going all the way can also be more costly, then applying something on a few machines and rolling back. Make sure that potentially destructive tests are performed when all teams are in the office. Provide communication, and get everyone involved. If testing in prod requires a pow-wow of 10+ people you will quickly see those kinds of tests end fast.
 
-{<1>}![](/content/images/2014/Feb/9689481.jpg)
+![](/content/images/2014/Feb/9689481.jpg)
 
 
 

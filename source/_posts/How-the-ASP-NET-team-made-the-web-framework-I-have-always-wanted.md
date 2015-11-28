@@ -27,7 +27,7 @@ So the first huge gripe for me in asp 4.x land is when I go file->New I get a pr
 
 #### CS proj (and javascript)
 
-I really enjoy using Atom, or Webstorm for Javscript. Visual studio is not in my mind when working on JavaScript applications. However when I work on SPA's for ol' .NET the files would have to have a csproj reference if I wanted to make a web deploy package that contained the file. The only other [route I found](https://blog.tommyparnell.com/using-bower-and-grunt-with-a-net-app/) was to make some special MSBUILD tasks that included adding a whole folder as content at build time. This was fine until I'd work with someone whom really liked using VS for programming and none of my files were in the csproj.
+I really enjoy using Atom, or Webstorm for Javscript. Visual studio is not in my mind when working on JavaScript applications. However when I work on SPA's for ol' .NET the files would have to have a csproj reference if I wanted to make a web deploy package that contained the file. The only other [route I found](/using-bower-and-grunt-with-a-net-app/) was to make some special MSBUILD tasks that included adding a whole folder as content at build time. This was fine until I'd work with someone whom really liked using VS for programming and none of my files were in the csproj.
 
 #### Webapi vs MVC
 
