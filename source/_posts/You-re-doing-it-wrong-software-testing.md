@@ -42,7 +42,7 @@ If you have to test in prod try to patch a few servers and see what happens. Goi
 
 When problems occur in prod, you sometimes hear why did QA not catch this? When really the question should be, why was this not caught in test. One of the huge differences between these two statements is the first tries to blame a person, while the other constructively finds ways to improve and evolve.
 
->Everyone in the organization should take ownership of testing, and testing environments. ~ [Tommy Parnell](http://blog.tommyparnell.com)
+>Everyone in the organization should take ownership of testing, and testing environments. ~ [Tommy Parnell](http://about.tommyparnell.com)
 
 This is a huge key to success. Realize that if you write code, you probably write test cases. You should make sure you understand the release process, how code is tested, and how QA performs tests. Making sure QA can accurately test your code will ultimately prove beneficial to both you, your team, and your organization.
 
