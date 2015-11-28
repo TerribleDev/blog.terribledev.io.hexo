@@ -6,10 +6,8 @@ tags:
   - Blog
 ---
 
-
-
 I recently ported my ghost blog to hexo, and it was pretty easy.
-<!-- more -->
+<!-- excerpt -->
 
 Checkout my other hexo blogs:
 * <i class="fa fa-cloud fa-6"></i> [Hosting hexo in Azure webapps](/Hosting-hexo-in-azure-webapps/)
