@@ -19,7 +19,7 @@ Interested in Interstital ads, but not banner? Thats ok, but I recommend your re
 
 The very basic amount of code to do Interstitial Ad's are below
 
-```clike
+```csharp
 
  var ad = new InterstitialAd(con);
  ad.AdUnitId = "unitID";
@@ -33,7 +33,7 @@ The problem with the above code is it tries to show the ad right away, but the a
 
 Back to my github code, the Adwrapper class contains build methods for *full page ad* aka Interstitial.
 
-```clike
+```csharp
 using Android.App;
 using Android.Content;
 using Android.OS;
@@ -70,7 +70,7 @@ The custom build extension method works the same as the banner ad method, and ha
 
 The InterstitialAd class does not come with native event listeners. To implement listeners you must create a class that inherits from AdListner and then define the event listeners. We will want to do this so we can show the ad once it is downloaded to the phone, and not have to keep checking to see if it has downloaded. The demo code AdEventListener.cs file in the ad folder of AndroidPhone project contains an implementaiton of this.
 
-```clike
+```csharp
 
 
 namespace admobDemo
@@ -112,7 +112,7 @@ namespace admobDemo
 Once you have these componants in place your activity should end up looking like this.
 
 
-```clike
+```csharp
 
 
 using System;

@@ -53,7 +53,7 @@ Add the following XML to your Android Manifest file, place it in between the `<a
 
 You need to add these permissions to your AssemblyInfo.cs
 
-```clike
+```csharp
 [assembly: UsesPermission(Android.Manifest.Permission.Internet)]
 [assembly: UsesPermission(Android.Manifest.Permission.AccessNetworkState)]
 ```
@@ -63,7 +63,7 @@ You need to add these permissions to your AssemblyInfo.cs
 The standard code to create an ad is something like this:
 
 
-```clike
+```csharp
 using Android.Gms.Ads;
 
 namespace funtimes
@@ -95,7 +95,7 @@ However in the interests of showing, and creating more flexible code this tutori
 To start I created admobDemo.AndroidPhone.ad.AdWrapper.cs This code abstracts out some of the verbose building process, and allows the building Ad code to be reused. the code pertaining banner ads looks like this
 
 
-```clike
+```csharp
 
 
 using Android.Gms.Ads;
@@ -134,7 +134,7 @@ The [extension](http://msdn.microsoft.com/en-us/library/bb383977.aspx) method `C
 
 Your main activity should end up looking something like this:
 
-```clike
+```csharp
 
 
 
