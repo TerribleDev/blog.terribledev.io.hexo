@@ -23,7 +23,7 @@ I had some problems with Xamarin. Somethings are ugly, but with plastic surgery 
 
 Xamarin has its own software packages available for download. I tried a lot of them out, some were good others not so much. One of my biggest gripes was that Google Play Services currently has a [bug](http://stackoverflow.com/questions/20125720/xamarin-android-builds-deployments-are-very-slow-how-to-speed-them-up) that makes builds **really** slow. Other packages were either genius, or were simply unimpressive. The components have their own package manager, and it does do a decent job of keeping them in order. I have to admit though Xamarin has its own set of componants that do [in-app billing](http://components.xamarin.com/gettingstarted/xamarin.inappbilling), and [access phone data](http://components.xamarin.com/view/xamarin.mobile) without having to lift much of a finger.
 
-{<1>}![Moving at the build speed of Play Services](/content/images/2014/Feb/turtle_Alan_Rees.jpg)
+![Moving at the build speed of Play Services](/content/images/2014/Feb/turtle_Alan_Rees.jpg)
 
 ### Component Documentation
 

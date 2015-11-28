@@ -30,11 +30,11 @@ First you will need to create an account. After you do so create an ad, you must
 
 This is quite simple right click on the components folder (in visual studio, or xamarin studio) and click get more components.
 
-{<2>}![get a componant](/content/images/2014/Mar/componant.png)
+![get a componant](/content/images/2014/Mar/componant.png)
 
 Find the play services you require and click Add to App.
 
-{<6>}![](/content/images/2014/Mar/playservices.PNG)
+![](/content/images/2014/Mar/playservices.PNG)
 
 Add the following XML to your Android Manifest file, place it in between the `<application></application>` tags.
 
