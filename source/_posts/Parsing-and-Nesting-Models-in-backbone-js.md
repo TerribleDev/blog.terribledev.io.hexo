@@ -28,7 +28,7 @@ namespace.Model = Backbone.Model.extend({
 });
 ```
 
-##Nesting Models (aka model within a model)
+## Nesting Models (aka model within a model)
 
 We will use the same parse function as above to create models within this model from data retrieved by the server. You could even loop through an array's keys and values to convert them to a model if need be.
 

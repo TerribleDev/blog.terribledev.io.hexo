@@ -17,8 +17,8 @@ date: 2014-02-18 01:58:36
 
 * Part One
 * [Part Two](http://blog.tommyparnell.com/xamarin-for-android-the-bad-part-2-of-4/)
-* [Part Three](https://blog.tommyparnell.com/xamarin-for-android-the-ugly-part-3-of-4/)
-* [Part Four](https://blog.tommyparnell.com/xamarin-the-conclusion-part-4-of-4/)
+* [Part Three](/xamarin-for-android-the-ugly-part-3-of-4/)
+* [Part Four](/xamarin-the-conclusion-part-4-of-4/)
 
 This will be a series of blog entries where I discuss the Xamarin platform for Android.
 

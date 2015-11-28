@@ -10,7 +10,7 @@ updated: '2014-03-06 12:51:51'
 date: 2014-02-24 19:29:26
 ---
 
-<span style="float: right">[<i class="fa fa-hand-o-right"></i> Recieving feedback](https://blog.tommyparnell.com/receiving-feedback-without-being-an-asshole/)</span><br />
+<span style="float: right">[<i class="fa fa-hand-o-right"></i> Recieving feedback](/receiving-feedback-without-being-an-asshole/)</span><br />
 
 Giving and receiving feedback, allows us to maintain our strengths while improving our weaknesses. There are two major types of feedback, constructive, and reinforcing. Constructive feedback is asking someone to change behavior, while reinforcing is acknowledging good behavior.
 

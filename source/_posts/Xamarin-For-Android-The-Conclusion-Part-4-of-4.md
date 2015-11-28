@@ -12,12 +12,12 @@ updated: '2014-02-20 21:30:02'
 date: 2014-02-18 16:33:54
 ---
 
-* [Part One](https://blog.tommyparnell.com/xamarin-the-good-the-bad-and-the-ugly/)
-* [Part Two](http://blog.tommyparnell.com/xamarin-for-android-the-bad-part-2-of-4/)
-* [Part Three](https://blog.tommyparnell.com/xamarin-for-android-the-ugly-part-3-of-4/)
+* [Part One](/xamarin-the-good-the-bad-and-the-ugly/)
+* [Part Two](/xamarin-for-android-the-bad-part-2-of-4/)
+* [Part Three](/xamarin-for-android-the-ugly-part-3-of-4/)
 * Part Four
 
-Well verdict is in boys, and girls. Personally, I thought the platform needs to mature more. For those people who can pay for the business edition ($1000 USD/developer), and really prefer c#; then go for it. For most of us that can either do c# or Java; you may want to stick with Java. 
+Well verdict is in boys, and girls. Personally, I thought the platform needs to mature more. For those people who can pay for the business edition ($1000 USD/developer), and really prefer c#; then go for it. For most of us that can either do c# or Java; you may want to stick with Java.
 
 ## C# vs. Java for Android
 
@@ -37,7 +37,7 @@ With no sliding scale prices based on organization size, or project scope [Xamar
 
 ### Student Discount
 
-Xamarin, does provide a student discount. They give 90% off for enterprise edition, and for those of you whom go to school this is almost a must buy. You could probably make it back with this simple formula. 
+Xamarin, does provide a student discount. They give 90% off for enterprise edition, and for those of you whom go to school this is almost a must buy. You could probably make it back with this simple formula.
 
 >Flappy bird-like animal + Mario pipes + admob = $$$
 

@@ -12,10 +12,10 @@ updated: '2014-04-01 23:18:01'
 date: 2014-02-18 02:54:43
 ---
 
-* [Part One](https://blog.tommyparnell.com/xamarin-the-good-the-bad-and-the-ugly/)
+* [Part One](/xamarin-the-good-the-bad-and-the-ugly/)
 * Part Two
-* [Part Three](https://blog.tommyparnell.com/xamarin-for-android-the-ugly-part-3-of-4/)
-* [Part Four](https://blog.tommyparnell.com/xamarin-the-conclusion-part-4-of-4/)
+* [Part Three](/xamarin-for-android-the-ugly-part-3-of-4/)
+* [Part Four](/xamarin-the-conclusion-part-4-of-4/)
 
 [Xamarin](http://xamarin.com/) is a very good platform, but like everything it has parts that are not so great.
 
@@ -34,4 +34,3 @@ Although [Xamarin](http://xamarin.com) has a forum where helpful users help each
 ## Boilerplate
 
 Like most things Java, Android requires a lot of boilerplate. For a developer like myself, whom avoids Java this was a problem. I would have thought that [Xamarin](http://xamarin.com/) would have abstracted out more of the boilerplate than they did. On the one had, having my code look somewhat familiar when I see Java examples was nice, but on the other hand because the API is still different often the Java versions would not be close enough to fully help. My main problem with this, is if I really wanted to write boilerplate I would have used the Java libraries myself. They did make a start for this by generating the manifest file automatically, but I feel it needs to go further to fully mature this platform as a viable alternative to Java.
-
