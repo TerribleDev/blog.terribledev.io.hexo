@@ -11,7 +11,7 @@ updated: '2014-05-07 11:09:12'
 date: 2014-05-06 09:53:28
 ---
 
-* [Day Two](https://blog.tommyparnell.com/watching-the-watchers-monitorama-pdx-2014-day-two/)
+* [Day Two](/watching-the-watchers-monitorama-pdx-2014-day-two/)
 
 I am here in lovely Portland Oregon attending [Monitorama](http://monitorama.com/). Monitorama is a 3 day open source monitoring convention.
 

@@ -11,7 +11,7 @@ updated: '2014-04-25 23:15:12'
 date: 2014-03-11 00:51:51
 ---
 
-<span style="float: right">[<i class="fa fa-hand-o-right"></i> Part 2: Interstitial Ads](https://blog.tommyparnell.com/admob-with-xamarin-part-2-interstitialad/)</span><br />
+<span style="float: right">[<i class="fa fa-hand-o-right"></i> Part 2: Interstitial Ads](/admob-with-xamarin-part-2-interstitialad/)</span><br />
 
 This will be a brief overview on how to get admob working with Xamarin.
 

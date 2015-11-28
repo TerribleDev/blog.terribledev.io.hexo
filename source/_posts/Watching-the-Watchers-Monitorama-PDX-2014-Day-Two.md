@@ -10,7 +10,7 @@ updated: '2014-05-07 11:08:19'
 date: 2014-05-07 10:48:55
 ---
 
-* [Day One](https://blog.tommyparnell.com/watching-the-watchers-monitorama-day-one/)
+* [Day One](/watching-the-watchers-monitorama-day-one/)
 
 Day 2 was full of math based paranoia, math, and puppet(s)....
 

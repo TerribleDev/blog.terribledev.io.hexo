@@ -12,10 +12,10 @@ updated: '2014-02-20 13:15:28'
 date: 2014-02-18 03:16:17
 ---
 
-* [Part One](https://blog.tommyparnell.com/xamarin-the-good-the-bad-and-the-ugly/)
+* [Part One](/xamarin-the-good-the-bad-and-the-ugly/)
 * [Part Two](http://blog.tommyparnell.com/xamarin-for-android-the-bad-part-2-of-4/)
 * Part Three
-* [Part Four](https://blog.tommyparnell.com/xamarin-the-conclusion-part-4-of-4/)
+* [Part Four](/xamarin-the-conclusion-part-4-of-4/)
 
 I had some problems with Xamarin. Somethings are ugly, but with plastic surgery almost anything can become beautiful.
 
