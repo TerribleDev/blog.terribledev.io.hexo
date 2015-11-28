@@ -17,8 +17,8 @@ date: 2014-02-18 01:58:36
 
 * Part One
 * [Part Two](http://blog.tommyparnell.com/xamarin-for-android-the-bad-part-2-of-4/)
-* [Part Three](https://blog.tommyparnell.com/xamarin-for-android-the-ugly-part-3-of-4/)
-* [Part Four](https://blog.tommyparnell.com/xamarin-the-conclusion-part-4-of-4/)
+* [Part Three](/xamarin-for-android-the-ugly-part-3-of-4/)
+* [Part Four](/xamarin-the-conclusion-part-4-of-4/)
 
 This will be a series of blog entries where I discuss the Xamarin platform for Android.
 
@@ -29,7 +29,7 @@ When I heard about [Xamarin](http://xamarin.com/) I naturally, wanted to give it
 ## C# with no compromise
 The [Xamarin](http://xamarin.com/) platform uses mono, and some kind of voodoo bindings to the Java libraries to make it work. I wont go in depth, but the native features of the C# language are there to use. I never felt like my hands had been tied, that all of a sudden I couldn't use a library that is normally part of the [GAC](http://msdn.microsoft.com/en-us/library/yf1d93sz(v=vs.110).aspx) (Global Assembly Cache). When I needed multi-threading, System.Threading was there, and when I needed to use C# Generics I had no issues implementing them.
 
-{<1>}![Xamarin execution](/content/images/2014/Feb/architecture1.png)
+![Xamarin execution](/content/images/2014/Feb/architecture1.png)
 
 ## Manage Android Manifest files
 One of the things that blew me away about the platform, was that I never had to add anything to my manifest file. For those of you whom don't know, Android requires an XML config detailing the permissions you require, and the classes you have in your application.
