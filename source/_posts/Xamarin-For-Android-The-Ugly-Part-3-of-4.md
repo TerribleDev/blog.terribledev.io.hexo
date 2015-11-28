@@ -13,7 +13,7 @@ date: 2014-02-18 03:16:17
 ---
 
 * [Part One](/xamarin-the-good-the-bad-and-the-ugly/)
-* [Part Two](http://blog.tommyparnell.com/xamarin-for-android-the-bad-part-2-of-4/)
+* [Part Two](/xamarin-for-android-the-bad-part-2-of-4/)
 * Part Three
 * [Part Four](/xamarin-the-conclusion-part-4-of-4/)
 
