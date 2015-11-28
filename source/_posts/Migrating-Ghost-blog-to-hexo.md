@@ -23,9 +23,9 @@ This will drop many files, and folders. The primary one we are going to talk abo
 
 ## Porting your blogs over
 
-To get your data over you will need to go to this url: `http://yourblog.com/ghost/settings/labs/` and click the export button. Place the json file at the root of your hexo blog.
-
-run `hexo migrate ghost NameOfYourExportFile.json`
+To get your data over you will need to go to this url: `http://yourblog.com/ghost/settings/labs/` and click the export button. Place the json file at the root of your hexo blog, then run.
+* `npm install hexo-migrator-ghost --save`
+* `hexo migrate ghost NameOfYourExportFile.json`
 
 Your posts should drop in the posts folder, but the tags will need fixing. Open atom (or another editor that can do find replace in a directory) and replace `tags: |` with `tags:` in all the files.
 
