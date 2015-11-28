@@ -14,7 +14,7 @@ The standard way to get/set SharedPreferences in Xamarin is with the following c
 
 Get Preference:
 
-```clike
+```csharp
 
  var shared = con.GetSharedPreferences(_preferenceName, FileCreationMode.WorldReadable);
  var value = shared.All.Where(x => x.Key == key).FirstOrDefault().Value;
@@ -23,7 +23,7 @@ Get Preference:
 
 Set Preference:
 
-```clike
+```csharp
 
 var shared = con.GetSharedPreferences("PreferenceName", FileCreationMode.WorldWriteable);
             var edit = shared.Edit();
@@ -42,7 +42,7 @@ I recently added on [github](https://github.com/tparnell8/XamAndroidSettings) an
 
 The sample code below shows how to use it.
 
-```clike
+```csharp
 
 var sk = new SettingsKey<string>("KeyName", "PreferenceName", "DefaultValuehere");
            var setting = sk.GetSetting(this)
