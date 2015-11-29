@@ -20,7 +20,7 @@ The first thing I did was update my visual studio tools, do a `dnvm update`, the
 
 I deleted my hosting.ini, I changed my web command from using `"web": "Microsoft.AspNet.Hosting --config hosting.ini"` to `"web": "Microsoft.AspNet.Server.Kestrel"` and I set my web.config to look like the following. That was basically it. Overall really simple!
 
-```language-markup
+```xml
 <configuration>
   <system.webServer>
     <handlers>
