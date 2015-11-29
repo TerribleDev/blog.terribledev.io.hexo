@@ -38,25 +38,26 @@ Simple decoration such as:
 
 
 
-```c#
+```csharp
 [Activity(Label = "Label", MainLauncher = true, Icon = "@drawable/Icon")]
 ```
 
 Will Generate in your manifest file as:
-
+```xml
 <pre>
-< activity
+<activity
 android:label="Label"
              android:name=".logoActivity" >
-            < intent-filter >
-                < action android:name="android.intent.action.MAIN" />
-                < category android:name="android.intent.category.LAUNCHER" />
-            < /intent-filter>
-        < /activity>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </pre>
+```
 Adding permissions is also easy:
 
-```c#
+```csharp
 [assembly: UsesPermission(Android.Manifest.Permission.Internet)]
 ```
 
