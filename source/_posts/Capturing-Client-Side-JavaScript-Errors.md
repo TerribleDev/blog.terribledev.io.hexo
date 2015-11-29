@@ -14,7 +14,7 @@ Capturing client side errors in my opinion is really good. For starters you can 
 
 Below is a really simple, yet effective way to capture errors. Eventually you may want to implement something more advanced, but this will get you out of the gate.
 <!-- more -->
-```language-javascript
+```javascript
 window.onerror = function (errorMsg, url, lineNumber, column, error) {
     $.ajax('/api/Error', {
         type: "POST",

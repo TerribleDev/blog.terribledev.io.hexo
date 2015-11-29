@@ -53,13 +53,13 @@ When you are going to render a page you have to inject this razor:
 
 Then whenever you want to log anything client side you can do the following.
 
-```language-javascript
+```javascript
 JL("jsLogger").fatal("client log message");
 ```
 
 You can also set jsnlog as the global js error handler.
 
-```language-javascript
+```javascript
 window.onerror = function (errorMsg, url, lineNumber, column, errorObj) {
     // Send object with all data to server side log, using severity fatal,
     // from logger "onerrorLogger"
@@ -78,7 +78,7 @@ window.onerror = function (errorMsg, url, lineNumber, column, errorObj) {
 The docs are quite good, and it seems to work fine as a commonjs module (since we browserify things). The tool is super configurable through the web.config, and you can change the url it logs to.
 
 
-```markup
+```xml
 
 <configuration>
     ...
