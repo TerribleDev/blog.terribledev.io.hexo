@@ -260,17 +260,17 @@
      * @constructor
      */
     var CategoriesFilter = function(categoriesArchivesElem) {
-        this.$form        = $(categoriesArchivesElem).find('#filter-form');
+        this.$form = $(categoriesArchivesElem).find('#filter-form');
         this.$inputSearch = $(categoriesArchivesElem).find('input[name=category]');
         // Element where result of the filter are displayed
         this.$archiveResult = $(categoriesArchivesElem).find('.archive-result');
-        this.$categories    = $(categoriesArchivesElem).find('.category');
-        this.$posts         = $(categoriesArchivesElem).find('.archive');
-        this.categories     = categoriesArchivesElem + ' .category';
-        this.posts          = categoriesArchivesElem + ' .archive';
+        this.$posts = $(categoriesArchivesElem).find('.archive');
+        this.$categories = $(categoriesArchivesElem).find('.category-anchor');
+        this.posts = categoriesArchivesElem + ' .archive';
+        this.categories = categoriesArchivesElem + ' .category-anchor';
         // Html data attribute without `data-` of `.archive` element which contains the name of category
         this.dataCategory = 'category';
-        // Html ata attribute without `data-` of `.archive` element which contains the name of parent's categories
+        // Html data attribute without `data-` of `.archive` element which contains the name of parent's categories
         this.dataParentCategories = 'parent-categories';
     };
 
@@ -297,7 +297,7 @@
          * @returns {string} The name of the category
          */
         getSearch: function() {
-            return this.$inputSearch.val().replace('.', '__').toLowerCase();
+            return this.$inputSearch.val().toLowerCase();
         },
 
         /**
@@ -344,7 +344,7 @@
          * @returns {Number} The number of categories found
          */
         countCategories: function(category) {
-            return $(this.posts + '[data-' + this.dataCategory + '*=' + category + ']').length;
+            return $(this.posts + '[data-' + this.dataCategory + '*=\'' + category + '\']').length;
         },
 
         /**
@@ -357,20 +357,25 @@
 
             if (self.countCategories(category) > 0) {
                 // Check if selected categories have parents
-                if ($(self.posts + '[data-' + this.dataCategory + '*=' + category + '][data-' + self.dataParentCategories + ']').length) {
-                    parents = $(self.posts + '[data-' + self.dataCategory + '*=' + category + ']').attr('data-' + self.dataParentCategories).split(',');
-
-                    // Show only the title of the parents's categories and hide their posts
-                    parents.forEach(function(parent) {
-                        $(self.posts + '[data-' + self.dataCategory + '=' + parent + ']').show();
-                        $(self.posts + '[data-' + self.dataCategory + '=' + parent + '] > .archive-posts > .archive-post').hide();
+                if ($(self.categories + '[data-' + this.dataCategory + '*=\'' + category + '\'][data-' + self.dataParentCategories + ']').length) {
+                    // Get all categories that matches search
+                    $(self.categories + '[data-' + self.dataCategory + '*=\'' + category + '\']').each(function() {
+                        // Get all its parents categories name
+                        parents = $(this).attr('data-' + self.dataParentCategories).split(',');
+                        // Show only the title of the parents's categories and hide their posts
+                        parents.forEach(function(parent) {
+                            $(self.categories + '[data-' + self.dataCategory + '=\'' + parent + '\']').show();
+                            $(self.posts + '[data-' + self.dataCategory + '=\'' + parent + '\']').show();
+                            $(self.posts + '[data-' + self.dataCategory + '=\'' + parent + '\'] > .archive-posts > .archive-post').hide();
+                        });
                     });
+
                 }
             }
             // Show categories and related posts found
-            $(self.categories + '[data-' + self.dataCategory + '*=' + category + ']').show();
-            $(self.posts + '[data-' + self.dataCategory + '*=' + category + ']').show();
-            $(self.posts + '[data-' + self.dataCategory + '*=' + category + '] > .archive-posts > .archive-post').show();
+            $(self.categories + '[data-' + self.dataCategory + '*=\'' + category + '\']').show();
+            $(self.posts + '[data-' + self.dataCategory + '*=\'' + category + '\']').show();
+            $(self.posts + '[data-' + self.dataCategory + '*=\'' + category + '\'] > .archive-posts > .archive-post').show();
         },
 
         /**
@@ -763,7 +768,7 @@
         // Elements affected by the swipe of the sidebar
         // The `pushed` class is added to each elements
         // Each element has a different behavior when the sidebar is opened
-        this.$blog = $('body, .post-bottom-bar, #header, #main, .post-header-cover');
+        this.$blog = $('.post-bottom-bar, #header, #main, .post-header-cover');
         // If you change value of `mediumScreenWidth`,
         // you have to change value of `$screen-min: (md-min)` too in `source/_css/utils/variables.scss`
         this.mediumScreenWidth = 768;
@@ -776,21 +781,18 @@
          */
         run: function() {
             var self = this;
-
             // Detect the click on the open button
             self.$openBtn.click(function() {
                 if (!self.$sidebar.hasClass('pushed')) {
                     self.openSidebar();
                 }
             });
-
             // Detect the click on close button
             self.$closeBtn.click(function() {
                 if (self.$sidebar.hasClass('pushed')) {
                     self.closeSidebar();
                 }
             });
-
             // Detect resize of the windows
             $(window).resize(function() {
                 // Check if the window is larger than the minimal medium screen value
@@ -839,7 +841,6 @@
          */
         swipeSidebarToRight: function() {
             var self = this;
-
             // Check if the sidebar isn't swiped and prevent multiple click on the open button with `.processing` class
             if (!self.$sidebar.hasClass('pushed') && !this.$sidebar.hasClass('processing')) {
                 // Swipe the sidebar to the right
@@ -856,7 +857,6 @@
          */
         swipeSidebarToLeft: function() {
             var self = this;
-
             // Check if the sidebar is swiped and prevent multiple click on the close button with `.processing` class
             if (self.$sidebar.hasClass('pushed') && !this.$sidebar.hasClass('processing')) {
                 // Swipe the sidebar to the left
@@ -871,7 +871,6 @@
          */
         swipeBlogToRight: function() {
             var self = this;
-
             // Check if the blog isn't swiped and prevent multiple click on the open button with `.processing` class
             if (!self.$blog.hasClass('pushed') && !this.$blog.hasClass('processing')) {
                 // Swipe the blog to the right
@@ -888,7 +887,6 @@
          */
         swipeBlogToLeft: function() {
             var self = this;
-
             // Check if the blog is swiped and prevent multiple click on the close button with `.processing` class
             if (self.$blog.hasClass('pushed') && !this.$blog.hasClass('processing')) {
                 // Swipe the blog to the left
@@ -949,13 +947,13 @@
      * @constructor
      */
     var TagsFilter = function(tagsArchivesElem) {
-        this.$form          = $(tagsArchivesElem).find('#filter-form');
-        this.$inputSearch   = $(tagsArchivesElem + ' #filter-form input[name=tag]');
+        this.$form = $(tagsArchivesElem).find('#filter-form');
+        this.$inputSearch = $(tagsArchivesElem + ' #filter-form input[name=tag]');
         this.$archiveResult = $(tagsArchivesElem).find('.archive-result');
-        this.$tags          = $(tagsArchivesElem).find('.tag');
-        this.$posts         = $(tagsArchivesElem).find('.archive');
-        this.tags           = tagsArchivesElem + ' .tag';
-        this.posts          = tagsArchivesElem + ' .archive';
+        this.$tags = $(tagsArchivesElem).find('.tag');
+        this.$posts = $(tagsArchivesElem).find('.archive');
+        this.tags = tagsArchivesElem + ' .tag';
+        this.posts = tagsArchivesElem + ' .archive';
         // Html data attribute without `data-` of `.archive` element which contains the name of tag
         this.dataTag = 'tag';
     };
@@ -984,7 +982,7 @@
          * @returns {string} the name of tag entered by the user
          */
         getSearch: function() {
-            return this.$inputSearch.val().replace('.', '__').toLowerCase();
+            return this.$inputSearch.val().toLowerCase();
         },
 
         /**
@@ -992,7 +990,7 @@
          * @param {string} tag - name of a tag
          */
         filter: function(tag) {
-            if (tag == '') {
+            if (tag === '') {
                 this.showAll();
                 this.showResult(-1);
             }
@@ -1008,12 +1006,12 @@
          * @param {Number} numbTags - Number of tags found
          */
         showResult: function(numbTags) {
-            if (numbTags == 0) {
+            if (numbTags === 0) {
                 this.$archiveResult
                     .html('No tags found')
                     .show();
             }
-            else if (numbTags == -1) {
+            else if (numbTags === -1) {
                 this.$archiveResult
                     .html('')
                     .hide();
@@ -1027,11 +1025,11 @@
 
         /**
          * Count number of tags
-         * @param tag
+         * @param {string} tag
          * @returns {Number}
          */
         countTags: function(tag) {
-            return $(this.posts + '[data-' + this.dataTag + '*=' + tag + ']').length;
+            return $(this.posts + '[data-' + this.dataTag + '*=\'' + tag + '\']').length;
         },
 
         /**
@@ -1039,8 +1037,8 @@
          * @param {string} tag - name of a tag
          */
         showPosts: function(tag) {
-            $(this.tags + '[data-' + this.dataTag + '*=' + tag + ']').show();
-            $(this.posts + '[data-' + this.dataTag + '*=' + tag + ']').show();
+            $(this.tags + '[data-' + this.dataTag + '*=\'' + tag + '\']').show();
+            $(this.posts + '[data-' + this.dataTag + '*=\'' + tag + '\']').show();
         },
 
         /**

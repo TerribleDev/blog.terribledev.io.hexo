@@ -1,8 +1,8 @@
 # Developer documentation #
 
-This documentation will help you to understand tranquilpeak-hexo-theme code.  
+This documentation will help you to understand Tranquilpeak Hexo theme code.  
 
-If you want to report a bug or ask a question, [create an issue](https://github.com/LouisBarranqueiro/tranquilpeak-hexo-theme/issues/new).
+If you want to report a bug or ask a question, [create an issue](https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak/issues/new).
 
 ## Summary ##
 
@@ -29,7 +29,7 @@ If you want to report a bug or ask a question, [create an issue](https://github.
 ## General ##
 
 - **Author** : Louis Barranqueiro
-- **Version** : 1.4.3
+- **Version** : 1.5.0
 - **Compatibility** : Hexo 3.0.0 or later
 
 ## Features ##
@@ -59,6 +59,7 @@ If you want to report a bug or ask a question, [create an issue](https://github.
   
 **Integrated services :**  
 - Disqus  
+- Duoshuo  
 - Google analytics  
 - Gravatar  
 - Swiftype  
@@ -73,17 +74,17 @@ If you want to report a bug or ask a question, [create an issue](https://github.
 
 ## Installation ##
 
-1. Run `git clone https://github.com/LouisBarranqueiro/tranquilpeak-hexo-theme.git`
+1. Run `git clone https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak.git`
 2. Rename the folder in `tranquilpeak` and place it in `themes` folder of your Hexo blog
 3. Modify the theme in `_config.yml` by changing `theme` variable  to `tranquilpeak`
 4. Complete `theme/tranquilpeak/_config.yml` with your informations by following directives in comments
 
-If you want to configure the theme, please follow the [user documentation](https://github.com/LouisBarranqueiro/tranquilpeak-hexo-theme/blob/master/docs/user.md)  
+If you want to configure the theme, please follow the [user documentation](https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak/blob/master/docs/user.md)  
   
 ## Code structure ##
 
 ```
-tranquilpeak-hexo-theme
+tranquilpeak
 ├── docs
 │   ├── developer.md
 │   └── user.md
@@ -98,6 +99,7 @@ tranquilpeak-hexo-theme
 │   │   │   ├── actions.ejs
 │   │   │   ├── category.ejs
 │   │   │   ├── disqus.ejs
+│   │   │   ├── duoshuo.ejs
 │   │   │   ├── gallery.ejs
 │   │   │   ├── header.ejs
 │   │   │   ├── header-cover.ejs
@@ -265,6 +267,7 @@ If you want to add a new language, duplicate an existing language file and repla
     │   │   ├── actions.ejs
     │   │   ├── category.ejs
     │   │   ├── disqus.ejs
+    │   │   ├── duoshuo.ejs
     │   │   ├── gallery.ejs
     │   │   ├── header.ejs
     │   │   ├── header-cover.ejs
@@ -330,7 +333,6 @@ Each scrips is executed a the startup of Hexo. They are separed by categories:
         │   ├── _box.scss
         │   ├── _button.scss
         │   ├── _caption.scss
-        │   ├── _category.scss
         │   ├── _figure.scss
         │   ├── _form.scss
         │   ├── _hide.scss
@@ -497,12 +499,12 @@ Bower dependencies :
     │   ├── default.js
     │   ├── linkAssets.js
     │   ├── linkAssetsProd.js
-    │   └──syncAssets.js
+    │   └── syncAssets.js
     └── pipeline.js
 ```  
 
 - **config** : Default tasks
-- **register** : Alias tasks which call mutliple default tasks
+- **register** : Alias tasks which call multiple default tasks
 - **pipeline.js** : Files which contains a list of javascript and stylesheets files linked to the blog
 
 #### Pipeline #####
