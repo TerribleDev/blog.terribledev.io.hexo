@@ -22,7 +22,7 @@ Before we start, we need 2 things.
 
 ## The Code
 
-Ok so I'm going to walk you through the code...don't want to wait? scroll to the bottom.
+Ok so I'm going to walk you through the code...don't want to wait? scroll to the bottom ([or click here](#source)).
 
 
 #### Forking the target repo
@@ -119,7 +119,7 @@ Then submit the PR!!!!
 ```
 
 ## The actual code huzzah!!!!
-
+<a name="source"></a>
 
 ```csharp
 public async Task CommitThings(string owner, string repoName)
