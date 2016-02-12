@@ -9,7 +9,7 @@ tags:
 So recently I have had the (some would say unfortuate) time learning wix. Specifically I am trying to better understand windows installers, mostly to install webapps into IIS with MSI's. This is mostly due to the unfortunate situation where I constantly do work for windows things. I would recommend reading the docs on the [wixtoolset](http://wixtoolset.org) website, but if you are still having a trouble understanding how the tools come together, you can read this.
 
 Windows Installer Xml toolset or Wix for short, has been around since the early 2000's. The toolset is one of the great mechanisms to create MSI's. A while back I [blogged](/binding-ssl-certs-on-windows-installer-xml-wix-deployed-web-applications/) about how to use them to install ssl certs in IIS. Until recently when I fit the tools together in my head, I couldn't figure out how they work. So here is the tl;dr
-
+<!-- more -->
 ## tools
 
 The wix tools are command line tools, but they do have good integrations with msbuild. That being said you can invoke them right from gulp, or rake if you want.
