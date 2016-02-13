@@ -4,6 +4,7 @@ tags:
   - GitHub
   - Octokit
 thumbnailImage: thumbnail.png
+date: 2016-01-08 16:51
 ---
 
 Recently I have been working on an application that basically has a github bot (aka user) fork a repo, commit some files, and submit a PR against someone's repo. When it came down to actually making a new git commit through the github API, I had quite a hard time. I figured it out with some help from a ruby [tutorial](http://mattgreensmith.net/2013/08/08/commit-directly-to-github-via-api-with-octokit/), and now I'm going to show you how to do it.
