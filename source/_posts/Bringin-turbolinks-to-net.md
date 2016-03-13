@@ -8,7 +8,7 @@ tags:
 
 
 For a while now I have been playing with rails, and rack webapps. If you are not familiar with these, they are webservers created in ruby. One of the features I ran into during my journey into ruby land is [Turbolinks](https://github.com/turbolinks/turbolinks-classic). Incase you are not familiar, Turbolinks is basically a simplified pjax, with a lot of flexibility. Basically when you click on a link on a page with turbolinks, the page is loaded via ajax. The result of the ajax call (which is presumed to be html) will replace the document of the body tag. At the end of the day its a technology to load your subsequent server side pages via ajax.
-
+<!-- more -->
 
 ## Why load your pages via ajax?
 
