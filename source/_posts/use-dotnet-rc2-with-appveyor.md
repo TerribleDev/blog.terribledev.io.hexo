@@ -8,7 +8,7 @@ tags:
 dotnet CLI is currently in RC2, and while the train is fast approaching RTM, most tools are still catching up. [dotnet](dot.net) seems to have a documented cli based install for every platform except the good ol windows. That being said getting a windows based install/build is possible.
 <!-- more -->
 
-Place the following powershell as the before build step in appveyor. In short, download the installer, run it, and then restore your nuget packages. I got the flags by running the installer with /?
+Place the following powershell as the before build step in appveyor. In short, download the installer, run it, and then restore your nuget packages. I got the flags for the installer by running the installer with /?
 
 ```powershell
     (new-object net.webclient).DownloadFile('https://download.microsoft.com/download/4/6/1/46116DFF-29F9-4FF8-94BF-F9BE05BE263B/packages/DotNetCore.1.0.0.RC2-SDK.Preview1-x64.exe','core.exe')
