@@ -22,7 +22,7 @@ Place the following powershell as the before build step in appveyor. In short, d
 
 if you have solution files, and a project system them appveyor should build the project automatically. If you don't then set the build command to be `dotnet build .\path\to\your\proj`
 
-Since aspnet core builds to not emit dependent dll's appveyor's auto detect and run for tests doesn't work. Make sure you have added the test runner to your project.json and just run `dotnet test .\path\to\your\tests`
+Since aspnet core builds to not emit dependent dll's appveyor's auto detect and run for tests doesn't work. Make sure you have added the test runner to your project.json and just run `dotnet test .\path\to\your\tests` as your test_script of your appveyor.yml file
 
 You can find a working example [here](https://github.com/tparnell8/shodan.net) 
 
