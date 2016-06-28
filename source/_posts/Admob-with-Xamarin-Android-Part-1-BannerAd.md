@@ -19,7 +19,7 @@ This will be a brief overview on how to get admob working with Xamarin.
 
 I highly suggest you run this on a real phone. I'm not sure if the virtual phones can load content on the internet. I always develop on a real phone.
 
-Sample code located in a [repo at github](https://github.com/tparnell8/XamarinAdmobTutorial)
+Sample code located in a [repo at github](https://github.com/TerribleDev/XamarinAdmobTutorial)
 <!-- more -->
 ## Create an admob account
 
@@ -90,7 +90,7 @@ namespace funtimes
 
 ## Doing things better
 
-However in the interests of showing, and creating more flexible code this tutorial will guide you through the wrapper implementation I constructed, and posted on [github](https://github.com/tparnell8/XamarinAdmobTutorial).
+However in the interests of showing, and creating more flexible code this tutorial will guide you through the wrapper implementation I constructed, and posted on [github](https://github.com/TerribleDev/XamarinAdmobTutorial).
 
 To start I created admobDemo.AndroidPhone.ad.AdWrapper.cs This code abstracts out some of the verbose building process, and allows the building Ad code to be reused. the code pertaining banner ads looks like this
 

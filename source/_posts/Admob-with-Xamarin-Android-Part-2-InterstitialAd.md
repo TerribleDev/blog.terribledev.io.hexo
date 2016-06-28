@@ -13,7 +13,7 @@ date: 2014-03-11 01:44:06
 
 <span style="float: left">[Part 1: Banner Ads <i class="fa fa-hand-o-left"></i>](/admob-with-xamarin-part-1-banner-ads/)</span><br />
 
-Interested in Interstital ads, but not banner? Thats ok, but I recommend your read my first post about [banner ads](/admob-with-xamarin-part-1-banner-ads/). The first steps, installing Google Play Services, altering your permissions, adding to your manifests files, and reviewing my [github demo](https://github.com/tparnell8/XamarinAdmobTutorial) are located in that tutorial.
+Interested in Interstital ads, but not banner? Thats ok, but I recommend your read my first post about [banner ads](/admob-with-xamarin-part-1-banner-ads/). The first steps, installing Google Play Services, altering your permissions, adding to your manifests files, and reviewing my [github demo](https://github.com/TerribleDev/XamarinAdmobTutorial) are located in that tutorial.
 <!-- more -->
 ## The Basics
 

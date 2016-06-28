@@ -31,7 +31,7 @@ public void InsertSomething(string something)
 Now I tried to mitigate this in the past with IDisposable, but when I'd do some weak reference dependancy injection magic things usually got borked. I like to see using statements in action. I like know that things are getting disposed. However the verbosity, and sheer pain of it makes me want to puke. So one day I came up with the following.
 
 
-<script src="https://gist.github.com/tparnell8/f248f559dd89c8dc4b42.js"></script>
+<script src="https://gist.github.com/TerribleDev/f248f559dd89c8dc4b42.js"></script>
 [Gist Link](https://gist.github.com/f248f559dd89c8dc4b42.git)
 
 ## Ok? How do I use this?
