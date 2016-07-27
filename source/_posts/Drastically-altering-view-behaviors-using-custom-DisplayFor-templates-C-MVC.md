@@ -23,7 +23,7 @@ By simply making folders in your views folder called `DisplayTemplates` and `Edi
 
 ```
 
-So I thought to myself how this would be useful, and I have come up with a demo in [github](https://github.com/tparnell8/CSharp-MVC-Plugin-Views)
+So I thought to myself how this would be useful, and I have come up with a demo in [github](https://github.com/TerribleDev/CSharp-MVC-Plugin-Views)
 
 Essentially it goes like this. I have a bootstrap grid that we could fill with multiple tiles. This would be good if you were to show a gallery of images, and perhaps certain tiles would have different behavior. In my example I have 1 tile that displays an image, and another tile that displays some text.
 

@@ -38,7 +38,7 @@ The other major issues I have with this, is that it is quite verbose, and unnece
 <!-- more -->
 ## The Solution
 
-I recently added on [github](https://github.com/tparnell8/XamAndroidSettings) an abstraction around the shared preferences that make it easier to use. This class uses [c# generics](http://msdn.microsoft.com/en-us/library/512aeb7t.aspx), and an extension method I wrote for `ISharedPreferencesEditor` that make SharedPreferences easier to use.
+I recently added on [github](https://github.com/TerribleDev/XamAndroidSettings) an abstraction around the shared preferences that make it easier to use. This class uses [c# generics](http://msdn.microsoft.com/en-us/library/512aeb7t.aspx), and an extension method I wrote for `ISharedPreferencesEditor` that make SharedPreferences easier to use.
 
 The sample code below shows how to use it.
 
