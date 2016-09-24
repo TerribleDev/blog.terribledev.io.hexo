@@ -118,7 +118,7 @@ author:
     # or in `source/assets/images/` (production)
     # or you can use an external url
     # Overwritten by your gravatar image if `gravatar_email` is filled
-    picture: profile.jpg
+    picture:
     # Your Twitter username without the @. E.g : `tranquilpeak`
     twitter: TerribleDev
     # Your google plus profile id. E.g : `+Tranquilpeak` or `123812884128439`
@@ -170,7 +170,7 @@ disqus_shortname: blogtommyparnellcom
 # Your Google analystics web property ID : UA-XXXXX-X
 google_analytics_id: UA-48128396-1
 # Your Gravatar email. Overwrite `author.picture` everywhere in the blog
-gravatar_email:
+gravatar_email: tparnell8@gmail.com
 # Your swiftype install key
 swiftype_install_key:
 # Your Facebook user ids used to connect your blog with your facebook user accounts (Facebook Insights). Separate ids with comma. e.g : 9830047,1003342
