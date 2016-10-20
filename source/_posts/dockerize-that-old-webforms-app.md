@@ -9,6 +9,7 @@ So now that Windows server 2016 is [generally avalible](https://blogs.technet.mi
 
 On Linux, containers have been a thing for a long time. This technology is called LXC. Docker itself is a layer ontop of various container platforms embedded in operating systems. 
 
+<!-- more -->
 
 ## Getting started
 
