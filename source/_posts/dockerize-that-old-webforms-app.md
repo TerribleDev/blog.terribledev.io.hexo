@@ -26,9 +26,9 @@ ADD ${site_root} /inetpub/wwwroot
 
 ```
 
-In this case the `Dockerfile` is pulling down the aspnet image from Dockerhub. This is a servercore image, with iis/aspnet installed. it is adding the content in the current directory to /inetpub/wwwroot which is where the app is ran from in the container.
+In this case the `Dockerfile` is pulling down the aspnet image from Dockerhub. This is a servercore image, with iis/aspnet installed. Docker is adding the content in the current directory to /inetpub/wwwroot which is where the app is ran from in the container.
 
-Now compile your code and run the following
+Now compile your code and run the following in the root of your project directory
 
 ```powershell
 docker build -t mywebforms:0.0.1 .
@@ -42,6 +42,11 @@ To see the website running in the container we need to find its ip address and t
 docker inspect -f "{{ .NetworkSettings.Networks.nat.IPAddress }}" $(docker ps -qa)
 ```
 
+## Ok so now what?
+
+
+
+
 ## Plumbing in a CI system!
 
 
@@ -51,3 +56,5 @@ Even legacy applications can be improved with some kind of build automation. Sta
 In my sample I created a gulp file that takes in a version number (which could be passed by our CI system). Patches the AssemblyInfo.cs files, restores nuget packages, and compiles down a docker image to be used later. All with the simple command of `gulp build --version 1.0.0`
 
 The created docker image could easily be uploaded to some kind of storage. 
+
+
