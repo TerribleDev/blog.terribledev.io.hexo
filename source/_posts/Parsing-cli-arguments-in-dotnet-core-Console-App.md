@@ -6,6 +6,8 @@ tags:
   - console
 ---
 
+>tl;dr view [this gist](https://gist.github.com/TerribleDev/06abb67350745a58f9fab080bee74be1)
+
 So its 2016, and we are still making console apps/cli's. In fact I would say there has been a surge in popularity of these types of tools. I think we have come to the realization that buttons on forms are not automatable, and that the command line doesn't have to be scary. 
 
 I recently started writing an app in dotnet core, which is the new runtime for dotnet. In the past I have often used [command line parser](https://www.nuget.org/packages/CommandLineParser), but as of this writing it does not support core.
