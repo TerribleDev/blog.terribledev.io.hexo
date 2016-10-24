@@ -13,7 +13,7 @@ On Linux, containers have been a thing for a long time. This technology is calle
 
 ## Getting started
 
-So I have put an example project [together on github](https://github.com/TerribleDev/docker-webforms) which may help you understand what is going on. Docker images are first compiled which essentially involves taking an existing image, maybe running some commands (like installing windows features), and pushing your files into the container. After the imate is built we can run the container, and beyond that we can publish the image for deployment.
+So I have put an example project [together on github](https://github.com/TerribleDev/docker-webforms) which may help you understand what is going on. Docker images are first compiled which essentially involves taking an existing image, maybe running some commands (like installing windows features), and pushing your files into the container. After the image is built we can run the container, and beyond that we can publish the image for deployment.
 
 We define how the container is built with a `Dockerfile`. Take an existing webforms app, and in the web project add a file called `Dockerfile` with the following content
 
