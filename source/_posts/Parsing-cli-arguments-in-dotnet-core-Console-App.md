@@ -6,7 +6,7 @@ tags:
   - console
 ---
 
->tl;dr view [this gist](https://gist.github.com/TerribleDev/06abb67350745a58f9fab080bee74be1)
+**tl;dr** view [this gist](https://gist.github.com/TerribleDev/06abb67350745a58f9fab080bee74be1)
 
 So its 2016, and we are still making console apps/cli's. In fact I would say there has been a surge in popularity of these types of tools. I think we have come to the realization that buttons on forms are not automatable, and that the command line doesn't have to be scary. 
 
