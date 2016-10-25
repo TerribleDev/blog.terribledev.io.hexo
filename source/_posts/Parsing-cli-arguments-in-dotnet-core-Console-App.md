@@ -87,7 +87,7 @@ For example if we were to create a webapp we could pass `--location <locationher
 
 Now last note, apps return exit codes. Basically an integer representing either a success `0` or an error `>0` just be aware that command line tools should return a status code 0 if everything is ok.
 
-## Ok I get it, now how to I parse things in dotnet
+## Ok I get it, now how do I parse things in dotnet
 
 Great, so circling back to the beginnings of my story. I needed a **solid** cli parser. One that can do commands n levels deep, auto parsing properties, and has a clean api. The cli parser for ef, and dotnet seems to fit that bill.
 
