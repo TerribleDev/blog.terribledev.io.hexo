@@ -176,7 +176,7 @@ Make your catapult declaration look like this:
             var catapult = app.Command("catapult", config => { 
                 config.OnExecute(()=>{
                     config.ShowHelp(); //show help for catapult
-                    return 1; //return error since we didn't do anything
+                    return 0; //return error since we didn't do anything
                 });
                 config.HelpOption("-? | -h | --help"); //show help on --help
              });
@@ -201,7 +201,7 @@ Ok so now lets add `add` and `list` to snowballs.
             var snowball = app.Command("snowball", config => { 
                     config.OnExecute(()=>{
                     config.ShowHelp(); //show help for catapult
-                    return 1; //return error since we didn't do anything
+                    return 0; //return error since we didn't do anything
                 });
                 config.HelpOption("-? | -h | --help"); //show help on --help
              });
@@ -231,7 +231,7 @@ Ok so now lets add `add` and `list` to snowballs.
                             Console.WriteLine($"added {arg.Value}");
                             return 0;
                         }
-                        return 1;
+                        return 0;
                         
                         
                      });   
@@ -252,7 +252,7 @@ Now all that is left is to be able to let catapults throw snow.
 
                     //actually do something
                     Console.WriteLine($"threw snowball: {ball.Value} with {cata.Value}");
-                    return 1;
+                    return 0;
                 });
              });
 
@@ -305,6 +305,38 @@ threw snowball: a with 1
 
 ```
 
+Alright, one last feature. If we wanted to add an `--even-harder` parameter to the fling action we can do that!
+
+
+```code 
+
+            catapult.Command("fling", config =>{ 
+                config.Description = "fling snow";
+                var harderParam = config.Option("--even-harder", "fling snowballs at lightning speed!!!", CommandOptionType.NoValue);
+                var ball = config.Argument("snowballId", "snowball id", false);
+                var cata = config.Argument("catapultId", "id of catapult to use", false);
+                config.OnExecute(()=>{
+                    if(harderParam.HasValue())
+                    {
+                        //actually do something
+                        Console.WriteLine($"threw snowball: {ball.Value} with {cata.Value} even harder!!!!");
+                        return 0;                        
+                    }
+                    //actually do something
+                    Console.WriteLine($"threw snowball: {ball.Value} with {cata.Value}");
+                    return 0;
+                });
+             });
+
+``` 
+
+Ok great, now we get the result from `app.Execute();` we should exit the console with the same status code.
+
+```csharp
+var result = app.Execute(args);
+Environment.Exit(result);
+
+``` 
 
 Here is the full source as a [gist](https://gist.github.com/TerribleDev/06abb67350745a58f9fab080bee74be1#file-program-cs):
 
