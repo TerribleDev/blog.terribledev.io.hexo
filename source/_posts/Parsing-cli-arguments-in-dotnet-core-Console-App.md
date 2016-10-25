@@ -14,7 +14,7 @@ I recently started writing an app in dotnet core, which is the new runtime for d
 
 > I was really lost trying to find an arguments parsing library when I realized the dotnet cli was open sourced.
 
-After much struggle, failing to bingle. I started ripping through the ef, and dotnet cli's code hoping to find a gem. Thats when I stumbled across a [diamond](microsoft.extensions.commandlineutils). You see many dotnet projects use [Microsft.Extension.CommandLineUtils][microsoft.extensions.commandlineutils](https://www.nuget.org/packages/Microsoft.Extensions.CommandLineUtils/) to do cli parsing.
+After much struggle, failing to bingle. I started ripping through the ef, and dotnet cli's code hoping to find a gem. Thats when I stumbled across a [diamond](microsoft.extensions.commandlineutils). You see many dotnet projects use [Microsft.Extension.CommandLineUtils](https://www.nuget.org/packages/Microsoft.Extensions.CommandLineUtils/) to do cli parsing.
 
 <!-- more -->
 
