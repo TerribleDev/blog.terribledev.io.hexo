@@ -308,7 +308,7 @@ threw snowball: a with 1
 Alright, one last feature. If we wanted to add an `--even-harder` parameter to the fling action we can do that!
 
 
-```code 
+```csharp 
 
             catapult.Command("fling", config =>{ 
                 config.Description = "fling snow";
