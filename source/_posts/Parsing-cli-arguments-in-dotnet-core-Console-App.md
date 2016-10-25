@@ -301,14 +301,11 @@ Arguments:
   catapultId  id of catapult to use
 C:\projects\CommandLineParsing> dotnet .\bin\Debug\netcoreapp1.0\k.dll catapult fling a 1
 threw snowball: a with 1
-
-
 ```
 
 Alright, one last feature. If we wanted to add an `--even-harder` parameter to the fling action we can do that!
 
-
-```csharp 
+```csharp
 
             catapult.Command("fling", config =>{ 
                 config.Description = "fling snow";
@@ -328,15 +325,17 @@ Alright, one last feature. If we wanted to add an `--even-harder` parameter to t
                 });
              });
 
-``` 
+
+```
 
 Ok great, now we get the result from `app.Execute();` we should exit the console with the same status code.
 
 ```csharp
+
 var result = app.Execute(args);
 Environment.Exit(result);
 
-``` 
+```
 
 Here is the full source as a [gist](https://gist.github.com/TerribleDev/06abb67350745a58f9fab080bee74be1#file-program-cs):
 
