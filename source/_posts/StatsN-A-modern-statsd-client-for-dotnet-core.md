@@ -34,7 +34,7 @@ I really tried [working with the community](https://github.com/Pereingo/statsd-c
 ## Statsd clients, not as simple as you think
 
 
-Ok so I know what you are thinking. This can't be that complicated right? Well statsd has no rest endpoint. Statsd does not talk http, this is either a Udp, or Tcp connection. These are simple connections, with bytes being pumped over the wire. There are many gotchas in the land of socke reuse, and capturing them effectively is not simple. Building the metrics up, and pumping them over the wire in a manor that does not hinder the calling application is not as simple as one might believe. I spent quite some time in Linqpad making sure I was making the right decision. I always picked the decision that was faster, even if the code was/is uglier.
+Ok so I know what you are thinking. This can't be that complicated right? Well statsd has no rest endpoint. Statsd does not talk http, this is either a Udp, or Tcp connection. These are simple connections, with bytes being pumped over the wire. There are many gotchas in the land of socket reuse, and capturing them effectively is not simple. Building the metrics up, and pumping them over the wire in a manor that does not hinder the calling application is not as simple as one might believe. I spent quite some time in Linqpad making sure I was making the right decision. I always picked the decision that was faster, even if the code was/is uglier.
 
 Writing a library that prevents throwing exceptions is no trivial matter. Infact this requires [lots of unit tests](https://coveralls.io/github/TryStatsN/StatsN), and I know I didn't hit all the lines of code in my testing. Getting everything right is tricky for sure!
 
