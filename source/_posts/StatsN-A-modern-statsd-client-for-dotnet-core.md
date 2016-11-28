@@ -15,6 +15,7 @@ thumbnail_image_position: right
 date: 2016-11-28 06:21:06
 ---
 
+*tl;dr [click here](https://github.com/TryStatsN/StatsN)*
 
 When we talk about capturing metrics in applications. One server/service that constantly is in all conversations monitoring, is [statsd](https://github.com/etsy/statsd). Incase you have never heard of it, statsd is a udp/tcp server that you send your in-code metrics to. These metrics get aggregated by statsd, and are forwarded to various backends. Some backends are services like [librato](https://www.librato.com/) or [sumologic](https://www.sumologic.com/). Other times you are sending metrics to time series databases such as [graphite](https://graphiteapp.org/) or god forbid [influxdb](https://graphiteapp.org/).
 
