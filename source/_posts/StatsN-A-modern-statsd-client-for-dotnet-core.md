@@ -44,6 +44,8 @@ StatsN at its heart is has a simple api. Now to start you have to be running sta
 
 We can construct a new stastd client with something like the following:
 
+`Install-Package StatsN`
+
 ```csharp
 
 IStatsd statsd = StatsN.Statsd.New<Udp>(a=>a.HostOrIp = "10.22.2.1", Port = 8125);
