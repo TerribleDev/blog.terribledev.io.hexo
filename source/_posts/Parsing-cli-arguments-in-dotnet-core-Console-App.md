@@ -14,7 +14,7 @@ I recently started writing an app in dotnet core, which is the new runtime for d
 
 > I was really lost trying to find an arguments parsing library when I realized the dotnet cli was open sourced.
 
-After much struggle, failing to bingle. I started ripping through the ef, and dotnet cli's code hoping to find a gem. Thats when I stumbled across a [diamond](microsoft.extensions.commandlineutils). You see many dotnet projects use [Microsft.Extension.CommandLineUtils][microsoft.extensions.commandlineutils](https://www.nuget.org/packages/Microsoft.Extensions.CommandLineUtils/) to do cli parsing.
+After much struggle, failing to bingle. I started ripping through the Entity Framework, and dotnet cli's code hoping to find a gem. Thats when I stumbled across a [diamond](microsoft.extensions.commandlineutils). You see many dotnet projects use [Microsft.Extension.CommandLineUtils](https://www.nuget.org/packages/Microsoft.Extensions.CommandLineUtils/) to do cli parsing.
 
 <!-- more -->
 
@@ -87,7 +87,7 @@ For example if we were to create a webapp we could pass `--location <locationher
 
 Now last note, apps return exit codes. Basically an integer representing either a success `0` or an error `>0` just be aware that command line tools should return a status code 0 if everything is ok.
 
-## Ok I get it, now how to I parse things in dotnet
+## Ok I get it, now how do I parse things in dotnet
 
 Great, so circling back to the beginnings of my story. I needed a **solid** cli parser. One that can do commands n levels deep, auto parsing properties, and has a clean api. The cli parser for ef, and dotnet seems to fit that bill.
 
@@ -176,7 +176,7 @@ Make your catapult declaration look like this:
             var catapult = app.Command("catapult", config => { 
                 config.OnExecute(()=>{
                     config.ShowHelp(); //show help for catapult
-                    return 1; //return error since we didn't do anything
+                    return 0; //return error since we didn't do anything
                 });
                 config.HelpOption("-? | -h | --help"); //show help on --help
              });
@@ -201,7 +201,7 @@ Ok so now lets add `add` and `list` to snowballs.
             var snowball = app.Command("snowball", config => { 
                     config.OnExecute(()=>{
                     config.ShowHelp(); //show help for catapult
-                    return 1; //return error since we didn't do anything
+                    return 0; //return error since we didn't do anything
                 });
                 config.HelpOption("-? | -h | --help"); //show help on --help
              });
@@ -231,7 +231,7 @@ Ok so now lets add `add` and `list` to snowballs.
                             Console.WriteLine($"added {arg.Value}");
                             return 0;
                         }
-                        return 1;
+                        return 0;
                         
                         
                      });   
@@ -252,7 +252,7 @@ Now all that is left is to be able to let catapults throw snow.
 
                     //actually do something
                     Console.WriteLine($"threw snowball: {ball.Value} with {cata.Value}");
-                    return 1;
+                    return 0;
                 });
              });
 
@@ -301,10 +301,41 @@ Arguments:
   catapultId  id of catapult to use
 C:\projects\CommandLineParsing> dotnet .\bin\Debug\netcoreapp1.0\k.dll catapult fling a 1
 threw snowball: a with 1
+```
+
+Alright, one last feature. If we wanted to add an `--even-harder` parameter to the fling action we can do that!
+
+```csharp
+
+            catapult.Command("fling", config =>{ 
+                config.Description = "fling snow";
+                var harderParam = config.Option("--even-harder", "fling snowballs at lightning speed!!!", CommandOptionType.NoValue);
+                var ball = config.Argument("snowballId", "snowball id", false);
+                var cata = config.Argument("catapultId", "id of catapult to use", false);
+                config.OnExecute(()=>{
+                    if(harderParam.HasValue())
+                    {
+                        //actually do something
+                        Console.WriteLine($"threw snowball: {ball.Value} with {cata.Value} even harder!!!!");
+                        return 0;                        
+                    }
+                    //actually do something
+                    Console.WriteLine($"threw snowball: {ball.Value} with {cata.Value}");
+                    return 0;
+                });
+             });
 
 
 ```
 
+Ok great, now we get the result from `app.Execute();` we should exit the console with the same status code.
+
+```csharp
+
+var result = app.Execute(args);
+Environment.Exit(result);
+
+```
 
 Here is the full source as a [gist](https://gist.github.com/TerribleDev/06abb67350745a58f9fab080bee74be1#file-program-cs):
 
