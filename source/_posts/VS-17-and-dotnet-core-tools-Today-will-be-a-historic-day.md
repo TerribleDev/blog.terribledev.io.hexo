@@ -8,7 +8,7 @@ tags:
 ---
 
 
-Today marks the release of Visual Studio 2017, and with it the final release of the tools for dotnet core. This means as of today you can build, test, and deploy an application completely supported by microsoft. Not just the runtimes, but the tooling as well. The CLI for dotnet core has been finalized, and its awesome. The csproj system has been revitalized. New csproj's can be created, and are fully compatible with the old. Visual studio 2017 has finally released. This is probably the greatest version of visual studio ever created. Finally VS has gone from a slow, archaic editor, to a fast moving IDE.
+Today marks the release of Visual Studio 2017, and with it the final release of the tools for dotnet core. This means as of today you can build, test, and deploy an application completely supported by microsoft. Not just the runtimes, but the tooling as well. The CLI for dotnet core has been finalized, and its awesome. The csproj system has been revitalized. New csproj's can be created, and are fully compatible with the old. Visual studio 2017 has finally released. This is probably the greatest version of visual studio ever created. Finally VS has gone from a slow, archaic editor, to a fast moving IDE. An IDE with a DevOps-First Cloud-First mentality. An IDE ready to tackle today's modern challenges.
 
 <!-- more -->
 
