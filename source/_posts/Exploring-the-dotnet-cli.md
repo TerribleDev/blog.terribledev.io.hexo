@@ -97,7 +97,7 @@ Solution File             sln                           Solution
 
 ```
 
-So it appears we can get a console app, class library, unit tests, aspnet core, webapp the list goes on and on. Lets do `dotnet new mvc --auth None --framework netcoreapp1.1`.
+So it appears we can get a console app, class library, unit tests, aspnet core, webapp the list goes on and on. Lets do `dotnet new mvc`.
 
 The results are a complete mvc application. Now lets restore the nuget packages with `dotnet restore`. Afterwards lets run the project with `dotnet run`. The results should be the app running on port 5000.
 
@@ -109,5 +109,5 @@ Finally we can even use the cli to create a solution file `dotnet new sln` and a
 
 Overall the cli is simple and easy to use. The `--help` command works on all verbs no matter how deep, and can be very handy. The second major version of the CLI planned, includes the ability to globally install tools. This will allow any developer to extend the dotnet cli with their own code. Sometime soon you may be able to `dotnet tool install awesome` and then `dotnet awesome`.
 
-Overall I'm both impressed, and speachless with how fast microsoft has moved its almost 20 year old platform into a very modern environment to work in. The new csproj files are easy to understand, and work 100% with my old csproj files. Backward compatibility means I can just move my stuff forward slowely, and don't have to port 10 years of work.
+Overall I'm both impressed, and speechless with how fast microsoft has moved its almost 20 year old platform into a very modern environment to work in. The new csproj files are easy to understand, and work 100% with my old csproj files. Backward compatibility means I can just move my stuff forward slowly, and don't have to port 10 years of work.
 
