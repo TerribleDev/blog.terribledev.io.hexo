@@ -6,7 +6,7 @@ tags:
 - dotnet core
 ---
 
-Now that dotnet has been released I thought it would be good to look into the dotnet cli. This is a new command line interface to build, manage, compile and run `dotnet core` based applications 
+Now that dotnet core tools have been released I thought it would be good to look into the dotnet cli. This is a new command line interface to build, manage, compile and run `dotnet core` based applications 
 
 <!-- more -->
 
