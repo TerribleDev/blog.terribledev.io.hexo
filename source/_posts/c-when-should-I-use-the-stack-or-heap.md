@@ -15,11 +15,11 @@ So I have started learning c++ recently, and as a .NET/Java developer I always w
 
 In c++ you have to manage memory yourself, there is no garbage collector.
 
-If you do not use the new keyword `var s = myClass()` you will create that class and assign it to s on the `stack`.
+If you do not use the new keyword `var s = myClass()` you will create that class and assign it to on the `stack`.
 
 Any stack variables will be cleaned at the end of the block, so in this case s will be cleaned. However if you use `var s = new myClass()` s will be allocated onto the **heap** and must be deleted, otherwise memory leaks will occur.
 
-To clean the variable you must call `delete s` when you are done with the variable, this will cause the memory in the heap to be cleaned.
+To clean the variable you must call `delete` when you are done with the variable, this will cause the memory in the heap to be cleaned.
 <!-- more -->
 Now this comes back to *what is a stack and heap* I wrote a [blog post](/value-types-vs-reference-types-in-c-and-why-it-matters/) about value and reference types in c# and this talk touches on a lot of the same subject. Basically a stack in c++ is a 1mb scratch pad of memory, that is really fast to access. The heap is a larger pool of memory for dynamic allocation, but can be slower to access.
 
