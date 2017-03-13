@@ -1,9 +1,9 @@
 title: Binding SSL Certs on Windows Installer XML (WiX) deployed Web Applications
 tags:
-
   - Development
   - csharp
   - Tutorial
+  - wix
 permalink: binding-ssl-certs-on-windows-installer-xml-wix-deployed-web-applications
 id: 37
 updated: '2014-07-22 21:58:35'
