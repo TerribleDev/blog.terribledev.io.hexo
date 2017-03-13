@@ -1,7 +1,7 @@
 title: 'Wiring up client side logs into c#/node.js logging frameworks'
 tags:
 
-  - c#
+  - csharp
   - logging
   - library
 permalink: wiring-up-client-side-logs-into-c-sharp-logging-frameworks

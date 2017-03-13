@@ -2,7 +2,7 @@ title: 'Drastically altering view behaviors using custom DisplayFor templates C#
 tags:
 
   - aspnet
-  - c#
+  - csharp
   - MVC
 permalink: custom-mvc-display-templates-2
 id: 54

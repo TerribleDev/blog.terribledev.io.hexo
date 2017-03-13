@@ -2,7 +2,7 @@ title: 'Must Have Tool: NDepend'
 tags:
 
   - Review
-  - c#
+  - csharp
   - Must Have Tool
   - tools
 permalink: must-have-tool-ndepend

@@ -2,7 +2,7 @@ title: Making a minimal webapp with dotnet core
 date: 2017-03-01 20:11:18
 tags:
   - csharp
-  - c#
+  - csharp
   - aspnet core
   - dotnet core
 ---

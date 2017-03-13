@@ -1,7 +1,7 @@
 title: 'Value types vs Reference Types in C#'
 tags:
 
-  - c#
+  - csharp
   - Tutorial
   - dotnet
 permalink: value-types-vs-reference-types-in-c-and-why-it-matters

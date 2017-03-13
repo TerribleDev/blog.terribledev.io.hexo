@@ -1,7 +1,7 @@
 title: Moving from beta 7 to beta 8 in ASP.NET 5 (MVC 6)
 tags:
 
-  - c#
+  - csharp
   - aspnet
   - aspnet 5
 permalink: moving-from-beta-7-to-beta-8-in-asp-net-5-mvc-6

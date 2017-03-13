@@ -4,7 +4,7 @@ tags:
   - Xamarin
   - Development
   - Review
-  - c#
+  - csharp
   - Xamarin For Android
 permalink: xamarin-for-android-the-ugly-part-3-of-4
 id: 8

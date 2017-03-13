@@ -1,7 +1,7 @@
 title: 'VS 2015, Getting Resharper Experience Without Resharper'
 tags:
 
-  - c#
+  - csharp
   - visual studio
   - productivity
 permalink: vs-2015-getting-resharper-experiance-without-resharper

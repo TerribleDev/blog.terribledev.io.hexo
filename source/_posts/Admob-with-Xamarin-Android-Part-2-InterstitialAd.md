@@ -2,7 +2,7 @@ title: 'Admob with Xamarin Android Part 2: InterstitialAd'
 tags:
 
   - Xamarin
-  - c#
+  - csharp
   - Xamarin For Android
   - Tutorial
 permalink: admob-with-xamarin-part-2-interstitialad

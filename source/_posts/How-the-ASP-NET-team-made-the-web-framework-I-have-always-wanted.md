@@ -1,6 +1,6 @@
 title: How the ASP.NET team made the web framework I have always wanted
 tags:
-  - c#
+  - csharp
   - aspnet 5
   - aspnet
   - nuget

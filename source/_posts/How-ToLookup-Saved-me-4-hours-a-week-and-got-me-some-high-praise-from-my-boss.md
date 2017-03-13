@@ -1,7 +1,7 @@
 title: 'How .ToLookup() Saved me 4 hours a week, and got me some high praise from my boss'
 tags:
 
-  - c#
+  - csharp
   - performance
 permalink: how-tolookup-saved-me-4-hours-a-week-and-got-me-some-high-praise-from-my-boss
 id: 55

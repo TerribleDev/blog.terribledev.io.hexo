@@ -1,6 +1,6 @@
 title: 'Commiting a new file to git, through the github api'
 tags:
-  - c#
+  - csharp
   - GitHub
   - Octokit
 thumbnailImage: thumbnail.png

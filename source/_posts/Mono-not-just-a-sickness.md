@@ -1,7 +1,7 @@
 title: 'Mono, not just a sickness'
 tags:
 
-  - c#
+  - csharp
   - linux
   - mono
 permalink: mono-not-just-a-sickness

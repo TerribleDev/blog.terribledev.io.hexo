@@ -1,7 +1,7 @@
 title: 'Using Action<>, Func<> to hide using statements'
 tags:
 
-  - c#
+  - csharp
   - Tutorial
   - generics
 permalink: using-action-func-to-hide-using-statements

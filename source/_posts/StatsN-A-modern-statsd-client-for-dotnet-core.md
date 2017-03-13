@@ -3,7 +3,7 @@ tags:
   - csharp
   - 'c#'
   - dotnet
-  - .net
+  - dotnet
   - aspnet core
   - aspnet
   - dotnet core

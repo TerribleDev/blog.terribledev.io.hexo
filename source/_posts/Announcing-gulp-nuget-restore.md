@@ -3,7 +3,7 @@ date: 2016-02-24 09:58:04
 tags:
 - gulp
 - build
-- .NET
+- dotnet
 - CI
 ---
 

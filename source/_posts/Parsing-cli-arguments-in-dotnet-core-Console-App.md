@@ -1,7 +1,7 @@
 title: Parsing cli arguments in dotnet core Console App
 date: 2016-10-24 16:31:06
 tags:
-  - c#
+  - csharp
   - dotnet
   - console
 ---
