@@ -2,7 +2,7 @@ title: 'Admob with Xamarin Android Part 1: BannerAd'
 tags:
 
   - Xamarin
-  - c#
+  - csharp
   - Xamarin For Android
   - Tutorial
 permalink: admob-with-xamarin-part-1-banner-ads

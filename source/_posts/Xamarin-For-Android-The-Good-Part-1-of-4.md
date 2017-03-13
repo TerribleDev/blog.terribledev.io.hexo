@@ -5,7 +5,7 @@ tags:
   - Xamarin
   - Development
   - Review
-  - c#
+  - csharp
   - Xamarin For Android
 permalink: xamarin-the-good-the-bad-and-the-ugly
 id: 6

@@ -1,7 +1,7 @@
 title: Getting SquishIt to work with Nancyfx and Razor (...and other static content issues)
 tags:
 
-  - c#
+  - csharp
   - Tutorial
   - JavaScript
   - Nancyfx

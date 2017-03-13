@@ -1,7 +1,7 @@
 title: 'Razor Websites, lightweight C# web coding'
 tags:
 
-  - c#
+  - csharp
   - aspnet
 permalink: razor-websites-super-lightweight-c-webdev
 id: 49

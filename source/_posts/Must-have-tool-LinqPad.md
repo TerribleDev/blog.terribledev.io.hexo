@@ -1,7 +1,7 @@
 title: 'Must have tool: LinqPad'
 tags:
 
-  - c#
+  - csharp
   - Must Have Tool
   - tools
   - review

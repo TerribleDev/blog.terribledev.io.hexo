@@ -3,7 +3,7 @@ tags:
 
   - Development
   - Review
-  - c#
+  - csharp
   - Xamarin For Android
   - Xamarin
 permalink: xamarin-for-android-the-bad-part-2-of-4

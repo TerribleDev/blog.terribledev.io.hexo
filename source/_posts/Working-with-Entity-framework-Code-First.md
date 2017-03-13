@@ -1,7 +1,7 @@
 title: Working with Entity framework (Code First)
 tags:
 
-  - c#
+  - csharp
   - entity framework
   - aspnet
 permalink: orm-showdown-dapper-vs-entityframework-part-1
