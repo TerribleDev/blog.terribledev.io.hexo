@@ -1,8 +1,6 @@
 title: StatsN a modern statsd client for dotnet core, and dotnet 4.5
 tags:
   - csharp
-  - 'c#'
-  - dotnet
   - dotnet
   - aspnet core
   - aspnet
