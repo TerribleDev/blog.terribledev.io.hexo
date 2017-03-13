@@ -1,8 +1,8 @@
 title: Making alexa skills in .net
-date: 2016-12-10 11:32:56
+date: 2017-3-13 11:32:56
 tags:
-- c#
-- .net
+- csharp
+- dotnet
 - alexa
 ---
 
@@ -63,11 +63,71 @@ namespace WebApplication6.Controllers
 
 ```
 
-Ok now we need to add an endpoint to take traffic from amazon on. Amazon will do a post with a json document to `/` so we need to allow that. We should also make a livecheck interface for get's and head requests.
 
 First lets install the alexa sdk. `Install-Package AlexaSkillsKit.NET`
 
-Ok now we need to add a livecheck endpoint.
+
+The sdk requires us to make a class that inherits from speechlet. Speechlet, the base class gives us everything we need to make a skill. The base class has a bunch of methods we can override. We usually have to return a SpeechletResponse which is simply an object that describes to alexa what to say back. Usually this is just some simple text to read back to the user.
+
+```csharp
+
+	public class AlexaResponse : Speechlet
+
+	{
+
+		
+
+
+
+		public override SpeechletResponse OnIntent(IntentRequest intentRequest, Session session)
+
+		{
+			//this will fire when your users pick an intent for example if your bot is named tommy and you say alexa ask tommy whats the weather today this will fire the weather intent
+		}
+
+
+
+		public override SpeechletResponse OnLaunch(LaunchRequest launchRequest, Session session)
+
+		{
+
+			//this will fire on the root of your alexa skill
+			//for example if your skill is named tommy, and you just say alexa ask tommy, alexa open tommy, alexa tommy. This will fire with no commands
+
+		}
+
+
+
+		public override void OnSessionEnded(SessionEndedRequest sessionEndedRequest, Session session)
+
+		{
+
+		}
+
+
+
+		public override void OnSessionStarted(SessionStartedRequest sessionStartedRequest, Session session)
+
+		{
+			//there are mechanisms to handle sessions in the sdk if you need it.
+		}
+```
+
+```csharp
+
+			return new SpeechletResponse()
+
+			{
+
+				//a sample response
+				OutputSpeech = new PlainTextOutputSpeech() { Text = "Hi, my name is tommy" },
+
+				ShouldEndSession = true
+
+			};
+```
+
+Ok now we need to add an endpoint to take traffic from amazon on. Amazon will do a post with a json document to `/` so we need to allow that. We should also make a livecheck interface for get's and head requests.
 
 ```csharp
 
@@ -80,9 +140,16 @@ Ok now we need to add a livecheck endpoint.
 		{
 			return this.Ok("Im Alive");
 		}
-	
-	}
+		
+		[Route("")]
+		[HttpPost]
+		public HttpResponseMessage Post()
 
+		{
+			return new AlexaResponse().GetResponse(this.Request);
+
+		}
+	}
 ```
 
-Now lets start using the sdk. The sdk requires
+That is basically it. the SDK will handle verifying the requests from amazon, and will call the overriden methods to deal with your alexa skill. Now you can deploy this to something like azure app services, and register yours skill in [the developer console](https://developer.amazon.com). Once registered, the skill should be avalible to you assuming you signed into your alexa device with the same account. You can see [a working sample here](https://github.com/TerribleDev/alexa-excuse.net).
