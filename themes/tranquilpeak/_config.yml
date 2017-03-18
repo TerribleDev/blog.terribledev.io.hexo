@@ -59,7 +59,7 @@ sidebar:
             icon: question
     author_links:
          github:
-             title: TerribleDev
+             title: Github
              url: https://github.com/TerribleDev
              icon: github
         # stack_overflow:
@@ -67,9 +67,25 @@ sidebar:
         #     url: http://stackoverflow.com/users
         #     icon: stack-overflow
          twitter:
-             title: TerribleDev
+             title: Twitter
              url: https://twitter.com/TerribleDev
              icon: twitter
+         mail:
+             title: E-Mail
+             url: mailto:tommy@terribledev.io
+             icon: envelope-o
+
+    donate_links:
+         donate:
+             title: Paypal Donations
+             url: https://paypal.me/tparnell
+             icon: paypal
+         bitcoin:
+             title: Bitcoin Donations
+             url: https://www.coinbase.com/terribledev
+             icon: bitcoin
+
+
         # facebook:
         #     title: global.facebook
         #     url: https://facebook.com/
@@ -82,10 +98,6 @@ sidebar:
         #     title: global.linkedin
         #     url: https://www.linkedin.com/profile/
         #     icon: linkedin
-        # mail:
-        #     title: global.mail
-        #     url: mailto:
-        #     icon: envelope-o
     rss:
         rss:
             title: global.rss
