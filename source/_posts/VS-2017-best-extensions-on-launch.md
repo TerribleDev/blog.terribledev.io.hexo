@@ -26,11 +26,11 @@ Here were my mentioned plugins of 2015:
 
 ## Razor tooling extension
 
-Ok so, incase you didn't hear. The AspNet team was unable to get all the razor tooling done in time to ship with VS 2017! Don't fret though, they have published an extension called the [Razor tooling extension](https://marketplace.visualstudio.com/items?itemName=ms-madsk.RazorLanguageServices). This provides a very rich experience with razor, and will ultimately let you refactor multiple razor files with ease!
+Ok so, incase you didn't hear. The AspNet team was unable to get all the razor tooling done in time to ship with VS 2017! Don't fret though, they have published an extension called the [Razor tooling extension](https://marketplace.visualstudio.com/items?itemName=ms-madsk.RazorLanguageServices). This provides a very rich experience with razor, and will ultimately let you refactor multiple razor files with ease! The biggest feature of this, is the TagHelper tools. This extension understands what TagHelpers you have in scope, and appropriately highlights, them and auto-completes the properties.
 
 ## Project file tools
 
-Ok so this ones name is a little ambiguous. The [project file tools](https://marketplace.visualstudio.com/items?itemName=ms-madsk.ProjectFileTools) extension allows your nuget packages to auto complete when editing the new csproj files, akin to what we had with project.json. In the new world, your nuget packages are declared inside the csproj, and this just provides intellisense on what packages, and version are avalible. 
+Ok so this ones name is a little ambiguous. The [project file tools](https://marketplace.visualstudio.com/items?itemName=ms-madsk.ProjectFileTools) extension allows your nuget packages to auto complete when editing the new csproj files, akin to what we had with project.json. In the new world, your nuget packages are declared inside the csproj, and this just provides intellisense on what packages, and version are available. This is an awesome experience, to keep me inside VS, and not in [nuget.org](https://nuget.org)
 
 
 ## Roslynator
@@ -45,7 +45,7 @@ Some of my favorites are the [match margin](https://marketplace.visualstudio.com
 
 ## Roaming extensions!
 
-The biggest new feature in vs 2017 is that your extensions can now "sync" between instances of VS. Under `tools -> Extensions and updates -> Roaming Extensions Manager` you can now pick extensions to "roam". This is an awesome tool, because you can now have the same development experience even under a brand new install!
+The biggest new feature in vs 2017 is that your extensions can now "sync" between instances of VS. Under `tools -> Extensions and updates -> Roaming Extensions Manager` you can now pick extensions to "roam". This is an awesome tool, because you can now have the same development experience even under a brand new install! Your extensions finally go with you.
 
 ![roaming extension manager](extmgr.PNG)
 
