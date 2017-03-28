@@ -10,6 +10,8 @@ updated: '2015-09-14 10:55:00'
 date: 2015-08-09 10:25:49
 ---
 
+*[click here](/VS-2017-best-extensions-on-launch/) for vs2017*
+
 Resharper has long dominated the c# landscape as the tool of tools. Roslyn shipping with VS 2015, the quick actions light bulb, and the community analyzers, all combine to produce a resharper-like experience.
 <!-- more -->
 ## Showing Overloads/Param Info
