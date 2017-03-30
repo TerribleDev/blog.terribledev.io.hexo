@@ -1,5 +1,5 @@
 layout: blog
-title: 'VS 2017, best extensions on launch'
+title: 'Visual Studio 2017, best extensions on launch'
 date: 2017-03-24 14:35:13
 tags:
 - dotnet
