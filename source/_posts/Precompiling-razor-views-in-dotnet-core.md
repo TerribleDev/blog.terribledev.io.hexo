@@ -8,12 +8,13 @@ Recently I had heard [live.asp.net](https://github.com/aspnet/live.asp.net/blob/
 
 Honestly its quite simple. Add the `Microsoft.AspNetCore.Mvc.Razor.ViewCompilation` package to your project. You can do this through the dotnet cli `dotnet add package Microsoft.AspNetCore.Mvc.Razor.ViewCompilation` or through the visual studio package explorer `install-package Microsoft.AspNetCore.Mvc.Razor.ViewCompilation`. 
 
-Then simply add `<MvcRazorCompileOnPublish>true</MvcRazorCompileOnPublish>` to your csproj file's property group. Thats it. You will now precompile your razor views on publish. You should end up with something like the following.
+Then simply add `<MvcRazorCompileOnPublish>true</MvcRazorCompileOnPublish>` and `<PreserveCompilationContext>true</PreserveCompilationContext>` to your csproj file's property group. Thats it. You will now precompile your razor views on publish. You should end up with something like the following.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk.Web">
   <PropertyGroup>
     <TargetFramework>netcoreapp1.1</TargetFramework>
+    <PreserveCompilationContext>true</PreserveCompilationContext>
     <MvcRazorCompileOnPublish Condition="'$(Configuration)' == 'Release'">true</MvcRazorCompileOnPublish>
   </PropertyGroup>
   <ItemGroup>
