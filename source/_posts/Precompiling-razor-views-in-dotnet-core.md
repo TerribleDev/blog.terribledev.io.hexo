@@ -4,7 +4,7 @@ tags:
 ---
 
 Recently I had heard [live.asp.net](https://github.com/aspnet/live.asp.net/blob/dev/src/live.asp.net/live.asp.net.csproj#L8) had started to precompile the razor views. I figured I'd dig in and quickly figure out how to do it.
-
+<!-- more -->
 
 Honestly its quite simple. Add the `Microsoft.AspNetCore.Mvc.Razor.ViewCompilation` package to your project. You can do this through the dotnet cli `dotnet add package Microsoft.AspNetCore.Mvc.Razor.ViewCompilation` or through the visual studio package explorer `install-package Microsoft.AspNetCore.Mvc.Razor.ViewCompilation`. 
 
