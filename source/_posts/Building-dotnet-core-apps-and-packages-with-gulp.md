@@ -81,4 +81,55 @@ Very easy, and simple. Glob up the csproj files and compile them out. In the bui
 
 ## Nuget packages
 
-Ok so here we go, this is when we start doing cool things. We want to build all of our projects with a version number, and then make a nuget package with the same version. We want to build in `Release` mode, so our library has no debugging symbols.
+Ok so here we go, this is when we start doing cool things. We want to build all of our projects with a version number, and then make a nuget package with the same version. We want to build in `Release` mode, and we want all packages in an nupkgs directory. At the end we should push our nuget packages to a custom myget feed.
+
+```js
+let gulp = require('gulp');
+let {restore, build, test, pack, publish} = require('gulp-dotnet-cli');
+let version = '1.0.0'; //you could read a git tag here
+let configuration = 'Release';
+gulp.task('restore', ()=>{
+    return gulp.src('**/*.sln', {read: false})
+            .pipe(restore());
+});
+
+gulp.task('build', ['restore'], ()=>{
+                    //this could be **/*.sln if you wanted to build solutions
+    return gulp.src('**/*.csproj', {read: false})
+        .pipe(build({version: version, configuration: configuration}));
+});
+
+gulp.task('pack', ['build'], ()=>{
+    return gulp.src('**/*.csproj', {read:false})
+            .pipe(pack({ 
+                version: version, 
+                configuration: configuration, 
+                output: path.join(process.cwd(), 'nupkgs') 
+                }));
+});
+
+//push nuget packages to a server
+gulp.task('push', ['pack'], ()=>{
+    return gulp.src('nupkgs/**.nupkg', {read: false})
+                .pipe(push({
+                    apiKey: process.env.NUGET_API_KEY, //my nuget api key from an environment variable
+                    source: 'https://myget.org/f/myfeedurl' //a custom nuget feed
+                    }));
+});
+
+```
+
+Finally you could publish a dotnet core app with a segment that looks like this:
+
+```js
+gulp.src('**/*.csproj', {read:false})
+    .pipe(publish({ configuration: configuration, 
+                    version: version, 
+                    output: path.join(process.cwd(), 'output') 
+                    }))
+
+```
+
+## Conclusion
+
+In summary, with this module you can easily package any dotnet core based project with gulp. This will work on any project that is compatible with the dotnet cli. You can find documentation, and samples [in github](https://github.com/Janus-vistaprint/gulp-dotnet-cli).
