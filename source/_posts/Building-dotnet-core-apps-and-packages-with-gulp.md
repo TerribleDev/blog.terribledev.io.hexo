@@ -119,17 +119,86 @@ gulp.task('push', ['pack'], ()=>{
 
 ```
 
-Finally you could publish a dotnet core app with a segment that looks like this:
+## Docker + Dotnet core + gulp
+
+
+Ok so lets say you have added a docker file to your projects directory, and you have added `<None include="Dockerfile">` to your csproj's item group.
+
+```dockerfile
+FROM microsoft/aspnetcore:1.1.1
+WORKDIR /app
+COPY . .
+ENTRYPOINT ["dotnet", "DotnetTerra.dll"]
+
+```
+
+
+First we need a task to publish our website to a folder, compiled. 
 
 ```js
+gulp.task('publish', ['restore'], ()=>
 gulp.src('**/*.csproj', {read:false})
     .pipe(publish({ configuration: configuration, 
                     version: version, 
                     output: path.join(process.cwd(), 'output') 
-                    }))
+                    })))
 
 ```
 
+next we need to compile our dockercontainer. run `npm install --save-dev child-process-promise` this is a simple package that converts all child process node calls to promises. Promises are like a callback, but with a nicer syntax. Note that here we are tagging the container with the same version as our package 
+
+```js
+
+const spawn = require('child-process-promise').spawn;
+
+gulp.task('docker:compile', ['publish'], ()=> 
+    spawn('docker', ['build', '-t', `myapp-${version}`, 'output'], {stdio:'inherit'})
+);
+
+
+```
+
+In total your file will probably look like this:
+
+
+```js
+const spawn = require('child-process-promise').spawn;
+const {restore, test, build, publish} = require('gulp-dotnet-cli');
+
+gulp.task('restore', ['clean'], ()=>
+    gulp.src('**/*.csproj')
+        .pipe(restore())
+          
+);
+
+gulp.task('build', ['restore'], ()=>
+    gulp.src('**/*.csproj', {read:false})
+        .pipe(build(
+            {
+                configuration: configuration,
+                version: version 
+            }))
+);
+
+gulp.task('publish', ['build'], ()=>
+    gulp.src('src/DotnetTerra/DotnetTerra.csproj')
+        .pipe(publish( 
+            {
+                configuration: configuration,
+                version: version,
+                output:  path.join(process.cwd(), 'output')
+            }))
+);
+
+gulp.task('docker:compile', ['publish'], ()=> 
+    spawn('docker', ['build', '-t', `myapp-${version}`, 'output'], {stdio:'inherit'})
+);
+
+
+```
+
+Gulp easily lets you add more tasks, and you could easily create a task to tag and push the container.
+
 ## Conclusion
 
-In summary, with this module you can easily package any dotnet core based project with gulp. This will work on any project that is compatible with the dotnet cli. You can find documentation, and samples [in github](https://github.com/Janus-vistaprint/gulp-dotnet-cli).
+In Conclusion, with this module you can easily package any dotnet core based project with gulp. This will work on any project that is compatible with the dotnet cli. By using a task framework like gulp you can ensure your artifacts are all tagged with the same versions, and have the same set of configurations. You can find documentation, and samples [in github](https://github.com/Janus-vistaprint/gulp-dotnet-cli).
