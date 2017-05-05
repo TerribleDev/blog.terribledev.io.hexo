@@ -4,6 +4,7 @@ tags:
 - csharp
 - dotnet
 - dotnet core
+- docker
 ---
 
 Here we are, its 2017 dotnet core is out, and finally dotnet has a proper cli. In a previous post [we explored the new cli](http://blog.terribledev.io/Exploring-the-dotnet-cli/). In short you can use the dotnet cli to build, test, package, and publish projects. However sometimes just using the cli is not enough. Sometimes, you land in a place where you have many projects to compile, test, and package. 
@@ -145,7 +146,7 @@ gulp.src('**/*.csproj', {read:false})
 
 ```
 
-next we need to compile our dockercontainer. run `npm install --save-dev child-process-promise` this is a simple package that converts all child process node calls to promises. Promises are like a callback, but with a nicer syntax. Note that here we are tagging the container with the same version as our package 
+next we need to compile our docker container. run `npm install --save-dev child-process-promise` this is a simple package that converts all child process node calls to promises. Promises are like a callback, but with a nicer syntax. Note that here we are tagging the container with the same version as our package 
 
 ```js
 
@@ -197,7 +198,7 @@ gulp.task('docker:compile', ['publish'], ()=>
 
 ```
 
-Gulp easily lets you add more tasks, and you could easily create a task to tag and push the container.
+Gulp can easily lets you add more tasks, and you could easily create a task to tag and push the container.
 
 ## Conclusion
 
