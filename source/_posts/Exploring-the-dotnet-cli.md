@@ -101,7 +101,7 @@ So it appears we can get a console app, class library, unit tests, aspnet core, 
 
 The results are a complete mvc application. Now lets restore the nuget packages with `dotnet restore`. Afterwards lets run the project with `dotnet run`. The results should be the app running on port 5000.
 
-{% image "fancybox" mvc-project.PNG "a new mvc project" %}
+![An mvc project](mvc-project.PNG)
 
 Now I'd like to add my favorite statsd client [StatsN](https://github.com/TryStatsN/StatsN). This is as simple as running `dotnet add package StatsN`. To get a directory with our application ready to be ran we can run `dotnet publish` and one will be created in ./bin/Debug/netcoreapp1.1/publish/ If we want to compile in release mode we need to specify `dotnet publish -c Release`.
 
