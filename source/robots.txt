@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://blog.terribledev.com/sitemap.xml
+Sitemap: https://blog.terribledev.io/sitemap.xml
