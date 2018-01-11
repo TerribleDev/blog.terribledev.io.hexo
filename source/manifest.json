@@ -1,0 +1,21 @@
+{
+    "dir": "ltr",
+    "lang": "en",
+    "name": "The Ramblings of TerribleDev",
+    "scope": "/",
+    "display": "browser",
+    "start_url": "https://blog.terribledev.io/",
+    "short_name": "The Ramblings of a TerribleDev",
+    "theme_color": "transparent",
+    "description": "My name is Tommy Parnell. I usually go by TerribleDev on the internets. These are just some of my writings and rants about the software space.",
+    "orientation": "any",
+    "background_color": "transparent",
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "icons": [
+      {
+        "src": "/content/favicon.ico",
+        "sizes": "16x16"
+      }
+    ]
+  }
