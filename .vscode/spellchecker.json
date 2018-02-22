@@ -8,9 +8,7 @@
         "refactor"
     ],
     "documentTypes": [
-        "markdown",
-        "latex",
-        "plaintext"
+        "markdown"
     ],
     "ignoreRegExp": [],
     "ignoreFileExtensions": [],
