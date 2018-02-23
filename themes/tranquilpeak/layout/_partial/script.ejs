@@ -55,5 +55,15 @@
             console.log('Service worker has been registered for scope:'+ reg.scope);
             });
         }
+        var fetched = [];
+        if(fetch){
+            $("a").each(function(index, item) {
+                if(!fetched.includes(item.href)){
+                    fetched.push(item.href);
+                    fetch(item.href);
+                }
+            });
+        }
+     
 
     </script>
