@@ -10,7 +10,7 @@ So its no secret I'm a docker fan. In-fact, I've been a fan of docker since the 
 > Docker for windows only supports windows 10, you can't use docker on windows 7, 8, etc.
 <!-- more -->
 
-Now people in the docker community know you can run docker on may operating systems. The docker toolkits provide GUI abstractions over the docker services. In the early days of docker, a tool existed called `boot2docker`. This was replaced with a newer tool called `docker-machine`
+Now people in the docker community know you can run docker on many operating systems. The docker toolkits for windows and mac provide GUI abstractions over the docker services. However, we can use the actual tools these GUI wrappers use to work with docker containers. In the early days of docker, a tool existed called `boot2docker`. This was replaced with a newer tool called `docker-machine`. These are the actual tools the docker toolkits use to provision linux virtual machines to help you work with containers. 
 
 ## Setting up your environment 
 
