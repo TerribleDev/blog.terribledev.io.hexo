@@ -58,7 +58,7 @@
         var fetched = [];
         if(fetch){
             $("a").each(function(index, item) {
-                if(!fetched.includes(item.href)){
+                if(!item.href.startsWith("http::") && item.href.startsWith("https::") && !fetched.includes(item.href)){
                     fetched.push(item.href);
                     fetch(item.href);
                 }
