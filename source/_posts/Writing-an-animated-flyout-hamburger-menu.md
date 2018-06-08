@@ -8,7 +8,7 @@ So I'm currently sitting on a plane at the moment. A recent project I started on
 <!-- more -->
 
 
-My page itself uses the minimalist Jekyll theme. I really like this theme's typography, and clean look. However its missing a key element for my page, and that is a menu. Without the ability to google I set off writing my own menu. No libraries, and that includes jquery! So the first place I started was to make the flyout menu. Here is a screen shot of the results.
+My page itself uses the minimalist Jekyll theme. I really like this theme's typography, and clean look. However its missing a key element for my page, and that is a menu. Without the ability to google I set off writing my own menu. No libraries, and that includes jquery! The only thing I relied on was a local copy of font awesome I had recently downloaded. So the first place I started was to make the flyout menu. Here is a screen shot of the results.
 
 ![screen shot showing expanded menu](menu.png) 
 
