@@ -12,7 +12,7 @@ So this week I ran a 3 day event here at vistaprint. We had many engineers fly i
 
 ## Communication
 
-The biggest thing you need to do is communicate with your attendees early. Depending on the size of the population, and attendees you might consider having weekly conference calls where people can listen in, and ask questions. 
+The biggest thing you need to do is communicate with your attendees early. Depending on the size of the population, and attendees you might consider having weekly conference calls where people can listen in, and ask questions. You should consider making a slack group. That way people can coordinate meetups, and get announcements.
 
 Google docs, or some other shareable pages are very important. Make sure attendees can find, and view relevant information. Things to make sure you communicate early, and often.
 
@@ -32,6 +32,8 @@ You need to be highly organized for an event. You should know what rooms you wil
 
 ## Speakers
 
+Organizing events is tough enough, but even harder if you are going to have speakers. Consider pairing up speakers with conference staff. See if you can preview the talks early, and let the speakers know if you are shooting for a specific theme. Don't force people into your theme too much, but you should try to couple the talks somehow to improve coheasion
+
 ## Catering
 
 Ok, food is good. Your attendees will like having food. Your attendees will probably have special needs. At minimum you should have vegetarian options for all meals. Most people that eat meat won't mind eating vegetables, but vegetarians will definitely not want to eat meat.
@@ -42,9 +44,11 @@ You should ask your attendees to [communicate](#Communicate) with you incase the
 
 ## Rooms
 
+You are going to have to figure out which rooms you are in. Round rooms are great for round table discussions, rectangles are great for speaking. Not to say you need to pick one or the other. However you should consider U shaped seating for presentations, and oval, or circular for talks. If you plan on letting people have beverages, consider having tables in the room with some drinks. You should clearly mark, or let people know where the bathrooms are.
+
 ## Audio/Video
 
-Ok, Audio/Video is hard. You are going to probably book an event that has A/V. Your first mission is to find the aspect ratio for the AV system, and [communicate that outward](#Communication) to your [speakers](#Speakers). Their slides should hopefully be the same aspect ratio. 
+Ok, Audio/Video is hard! You are going to probably book an event that has A/V. Your first mission is to find the aspect ratio for the AV system, and [communicate that outward](#Communication) to your [speakers](#Speakers). Their slides should hopefully be the same aspect ratio. 
 
 Next is [dongles](https://en.wikipedia.org/wiki/Dongle) aka adapters. You need to find out from your AV vendor, what video connector they have. They probably have either [HDMI](https://en.wikipedia.org/wiki/HDMI), or [VGA](https://en.wikipedia.org/wiki/VGA_connector). You should make sure you have a bunch of dongles that adapt the AV system's video in, to your laptop's video out. You should have the following covered
 
