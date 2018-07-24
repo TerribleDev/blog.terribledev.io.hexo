@@ -1,5 +1,5 @@
 title: Managing and catering events
-date: 2018-06-20 10:15:41
+date: 2018-07-24 10:15:41
 tags:
 - culture
 - social
