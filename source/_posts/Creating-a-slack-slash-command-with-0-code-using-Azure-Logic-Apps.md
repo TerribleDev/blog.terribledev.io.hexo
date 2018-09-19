@@ -5,7 +5,7 @@ tags:
 - slack
 ---
 
-Ok so recently I was on a slack sharing cat pictures, when I realized the CarGurus slack did not have a `/cat` command. I know immediately, this had to change!
+Ok so recently I was chatting on a slack, mostly sharing cat pictures, when I realized the CarGurus slack account did not have a `/cat` command. I knew immediately, this had to change!
 <!-- more -->
 
 
