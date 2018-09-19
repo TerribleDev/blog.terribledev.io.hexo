@@ -21,7 +21,9 @@ My first reaction was to make a azure function, when called from http will call 
 
 Then I remembered `azure logic apps` poor choice of name, but the demo I saw a year ago looked interesting. Ok, so this is basically like if-this-then-that but more for developers. You can do all kinds of cool stuff with it, like trigger when a file is written to storage, and call a workflow of other serverless functions. 
 
-In my case I started out with the http trigger. I made a parallel branch. The first branch returns an `200` status code back to the caller. This is because slack requires a response within `300ms`. The second branch I added a http call to the random cat api, a parse json function to parse the results, and then another http call back to slack with the proper data. The Url to the slack api is a function call to `triggerFormDataValue('response_url')` which will parse out the response url from the posted data to our function's trigger.
+In my case I started out with the http trigger. I made a parallel branch. The first branch returns an `200` status code back to the caller. This is because slack requires a response within `300ms`. The second branch I added a http call to the random cat api, a parse json function to parse the results, and then another http call back to slack with the proper data. The Url to the slack api is a function call to `triggerFormDataValue('response_url')` which will parse out the response url from the posted data to our function's trigger. I called the slash command and huzzah! I got an image of a cat!
+
+![an image of a cat from the random cat slash command](slack2.png)
 
 
 ![a screen shot of a logic app workflow in azure](azure1.png)
