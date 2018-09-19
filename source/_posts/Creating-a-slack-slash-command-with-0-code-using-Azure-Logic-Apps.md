@@ -25,6 +25,7 @@ In my case I started out with the http trigger. I made a parallel branch. The fi
 
 ![an image of a cat from the random cat slash command](slack2.png)
 
+Here is a quick view of my logic app workflow.
 
 ![a screen shot of a logic app workflow in azure](azure1.png)
 
