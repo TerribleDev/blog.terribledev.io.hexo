@@ -15,7 +15,7 @@ So my vision was simple, write `/cat` in slack and a random cat appears! Slack h
 
 So anyway, slash commands will call an http endpoint with either a POST or get. For mine I chose post. They expect a response within `300ms`, so not a lot of time! However in the post data slack provides a URL you can post back to with your response. That URL can be used for `3 seconds` tons of time for an api.
 
-So I found [this api](http://aws.random.cat/meow) which returns you a url of a random cat photo. Obviously my first reaction was to just call it and paste the response in slack. Unfortunately slack expects messages to come back in a [specific json format](https://api.slack.com/docs/messages).
+So I found [this api](http://aws.random.cat/meow) which returns you a url of a random cat photo. Obviously, my first reaction was to just call it and paste the response in slack. Unfortunately slack expects messages to come back in a [specific json format](https://api.slack.com/docs/messages).
 
 My first reaction was to make a azure function, when called from http will call the [random.cat](http://aws.random.cat/meow) api, and then shape the data correctly for slack. Even though that is not much code, its certainly more work than I was willing to put in on a `lunch break` project.
 
