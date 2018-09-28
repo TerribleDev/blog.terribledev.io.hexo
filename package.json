@@ -21,6 +21,7 @@
     "hexo-server": "^0.1.2"
   },
   "scripts": {
-    "test": "./node_modules/.bin/hexo generate"
+    "test": "./node_modules/.bin/hexo generate",
+    "generate": "hexo generate"
   }
 }
