@@ -1,7 +1,8 @@
 FROM node:8 as build
 WORKDIR /build
-COPY . .
+COPY package.json package.json
 RUN npm install
+COPY . .
 RUN npm run generate
 
 FROM nginx:mainline as runtime
