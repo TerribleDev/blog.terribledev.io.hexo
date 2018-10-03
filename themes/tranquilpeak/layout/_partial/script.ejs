@@ -44,26 +44,26 @@
 
     <script type="text/javascript">
      //Add this below content to your HTML page, or add the js file to your page at the very top to register sercie worker
-        if (navigator.serviceWorker.controller) {
-            console.log('[PWA Builder] active service worker found, no need to register')
-        } else {
+        // if (navigator.serviceWorker.controller) {
+        //     console.log('[PWA Builder] active service worker found, no need to register')
+        // } else {
         
-        //Register the ServiceWorker
-        navigator.serviceWorker.register('sw.js', {
-            scope: '/'
-            }).then(function(reg) {
-            console.log('Service worker has been registered for scope:'+ reg.scope);
-            });
-        }
-        var fetched = [];
-        if(fetch){
-            $("a").each(function(index, item) {
-                if(!item.href.startsWith("http::") && item.href.startsWith("https::") && !fetched.includes(item.href)){
-                    fetched.push(item.href);
-                    fetch(item.href);
-                }
-            });
-        }
+        // //Register the ServiceWorker
+        // navigator.serviceWorker.register('sw.js', {
+        //     scope: '/'
+        //     }).then(function(reg) {
+        //     console.log('Service worker has been registered for scope:'+ reg.scope);
+        //     });
+        // }
+        // var fetched = [];
+        // if(fetch){
+        //     $("a").each(function(index, item) {
+        //         if(!item.href.startsWith("http::") && item.href.startsWith("https::") && !fetched.includes(item.href)){
+        //             fetched.push(item.href);
+        //             fetch(item.href);
+        //         }
+        //     });
+        // }
      
 
     </script>
