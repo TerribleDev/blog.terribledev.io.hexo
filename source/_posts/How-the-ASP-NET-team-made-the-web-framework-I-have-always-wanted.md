@@ -5,7 +5,7 @@ tags:
   - aspnet
   - nuget
   - open source
-  - JavaScript
+  - javascript
 permalink: how-the-asp-net-team-dived-into-my-head-and-made-the-webframework-i-have-always-wanted
 id: 62
 updated: '2015-11-14 20:30:28'
