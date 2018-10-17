@@ -3,6 +3,7 @@ WORKDIR /build
 COPY package.json package.json
 RUN npm install
 COPY . .
+RUN npm run clean
 RUN npm run generate
 
 FROM nginx:mainline as runtime
