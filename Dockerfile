@@ -3,8 +3,7 @@ WORKDIR /build
 COPY package.json package.json
 RUN npm install
 COPY . .
-RUN npm run clean
-RUN npm run generate
+RUN npm run clean && npm run generate
 
 FROM nginx:mainline as runtime
 COPY --from=build /build/public /usr/share/nginx/html
