@@ -1,6 +1,6 @@
 FROM node:8 as build
 WORKDIR /build
-COPY package.json package-lock.json
+COPY ["package.json", "package-lock.json", "./"]
 RUN npm install
 COPY . .
 RUN npm run clean && npm run generate
