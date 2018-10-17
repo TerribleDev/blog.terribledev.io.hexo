@@ -4,7 +4,7 @@ tags:
 - javascript
 ---
 
-So incase you havn't been following me. I joined Cargurus in July. At cargurus we're currently working on our mobile web experience written in react, redux and reselect. As our implementation grew our page performance reduced.
+So incase you havn't been following me. I joined Cargurus in July. At cargurus we're currently working on our mobile web experience written in react, redux and reselect. As our implementation grew so did our time to first paint.
 
 <!-- more -->
 
