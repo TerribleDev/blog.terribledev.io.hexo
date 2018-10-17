@@ -3,9 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "hexo": {
-    "version": "3.7.1"
+    "version": "3.5.0"
   },
   "dependencies": {
+    "del-cli": "^1.1.0",
     "hexo": "^3.2.2",
     "hexo-generator-archive": "^0.1.2",
     "hexo-generator-category": "^0.1.2",
@@ -21,7 +22,8 @@
     "hexo-server": "^0.1.2"
   },
   "scripts": {
-    "test": "./node_modules/.bin/hexo generate",
-    "generate": "hexo generate"
+    "serve": "hexo serve",
+    "generate": "hexo generate",
+    "clean": "del db.json public"
   }
 }

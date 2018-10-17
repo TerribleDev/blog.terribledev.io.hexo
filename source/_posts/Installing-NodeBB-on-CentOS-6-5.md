@@ -5,7 +5,7 @@ tags:
   - Tutorial
   - nodeBB
   - CentOS
-  - JavaScript
+  - javascript
 permalink: installing-nodebb-on-centos-6-5
 id: 18
 updated: '2014-03-28 13:48:03'

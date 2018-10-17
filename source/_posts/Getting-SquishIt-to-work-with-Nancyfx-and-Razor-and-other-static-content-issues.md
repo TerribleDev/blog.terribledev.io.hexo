@@ -3,7 +3,7 @@ tags:
 
   - csharp
   - Tutorial
-  - JavaScript
+  - javascript
   - Nancyfx
   - SquishIt
   - css

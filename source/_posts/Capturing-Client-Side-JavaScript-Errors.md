@@ -1,7 +1,7 @@
 title: Capturing Client Side JavaScript Errors
 tags:
 
-  - JavaScript
+  - javascript
   - client side
   - error handling
 permalink: capturing-client-side-javascript-errors

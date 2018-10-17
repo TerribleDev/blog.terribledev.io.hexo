@@ -2,7 +2,7 @@ title: Navigating the JavaScript waters in 2015
 tags:
 
   - node.js
-  - JavaScript
+  - javascript
 permalink: navigating-the-javascript-waters-in-2015
 id: 48
 updated: '2015-09-01 20:18:27'

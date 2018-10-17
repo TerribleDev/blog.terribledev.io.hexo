@@ -3,7 +3,7 @@ tags:
 
   - Development
   - backbone.js
-  - Javascript
+  - javascript
   - Tutorial
 permalink: nested-models-in-backbone-js
 id: 13
