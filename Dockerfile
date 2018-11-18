@@ -7,5 +7,7 @@ RUN npm run clean && npm run generate
 
 FROM nginx:mainline as runtime
 COPY --from=build /build/public /usr/share/nginx/html
+COPY key.pem /etc/nginx/key.pem
+COPY cert.pem /etc/nginx/cert.pem
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY default.conf /etc/nginx/conf.d/default.conf
