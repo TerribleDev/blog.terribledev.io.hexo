@@ -1,7 +1,9 @@
-title: The battle of the buldge. Visualizing your javascript bundle
+title: The battle of the bulge. Visualizing your javascript bundle
 date: 2018-10-17 13:19:18
 tags:
 - javascript
+- battle of the bulge
+- performance
 ---
 
 So incase you havn't been following me. I joined Cargurus in July. At cargurus we're currently working on our mobile web experience written in react, redux and reselect. As our implementation grew so did our time to first paint.
