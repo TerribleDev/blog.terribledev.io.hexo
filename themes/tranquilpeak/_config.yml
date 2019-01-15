@@ -80,10 +80,6 @@ sidebar:
              title: Paypal Donations
              url: https://paypal.me/tparnell
              icon: paypal
-         bitcoin:
-             title: Bitcoin Donations
-             url: https://www.coinbase.com/terribledev
-             icon: bitcoin
 
 
         # facebook:
