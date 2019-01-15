@@ -44,7 +44,7 @@ You just need to replace the above with the following
 export const computeSomething =  createMarkedSelector('computeSomething', [getState], (state) => { /* compute projection */ });
 ```
 
-its pretty simple, it just requires you to pass a string in the first argument slot to write to the performance API. Inside vscode you can even do a regex find and replace to add this string.
+its pretty simple, it just requires you to pass a string in the first argument slot. That string will be the name used to write to the performance API, and will show up in the chrome profiler. Inside vscode you can even do a regex find and replace to add this string.
 
 
 ```
