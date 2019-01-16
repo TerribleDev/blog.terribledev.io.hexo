@@ -10,7 +10,7 @@ So incase you havn't been following me. I joined Cargurus in July. At cargurus w
 
 <!-- more -->
 
-So I've been spending a lot of time working on our performance. One tool I have found invaluable in the quest for page perf mecca is [source-map-explorer](https://www.npmjs.com/package/source-map-explorer). This is a tool that dives into a bundled file, and its map. Then visualizes the bundle in a tree view. This view lets you easily understand exactly what is taking up space in the bundle. What I love about this tool is that it works with any type of bundled javascript file, and is completely seperate of the build. So any bugs in webpack where you have duplicate files in a bundle will appear here.
+So I've been spending a lot of time working on our performance. One tool I have found invaluable in the quest for page perf mecca is [source-map-explorer](https://www.npmjs.com/package/source-map-explorer). This is a tool that dives into a bundled file, and its map. Then visualizes the bundle in a tree view. This view lets you easily understand exactly what is taking up space in the bundle. What I love about this tool is that it works with any type of bundled javascript file, and is completely de-void of any builds. So any bugs in your webpack config leading to duplicate files in a bundle will show up here.
 
 
 ## Getting started
