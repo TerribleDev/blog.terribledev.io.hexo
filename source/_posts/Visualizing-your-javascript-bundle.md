@@ -15,7 +15,7 @@ So I've been spending a lot of time working on our performance. One tool I have 
 
 ## Getting started
 
-You get started by `npm install -g source-map-explorer` then just download your bundles, and sourcemaps. In the command line run `source-map-explorer ./yourbundle.js ./yourbundle.js.map` Your browser should then open with a great tree view of what is inside your bundle. From here you can look to see what dependencies you have, and their sizes. Obviously, you can then decide to keep or throw them away.  
+You get started by `npm install -g source-map-explorer` then just download your bundles, and sourcemaps. You can do this from production if you have them. Otherwise build bundles locally. **Note** You should always use this on minified code where any tree shaking and dead code elimination has occurred. In the command line run `source-map-explorer ./yourbundle.js ./yourbundle.js.map` Your browser should then open with a great tree view of what is inside your bundle. From here you can look to see what dependencies you have, and their sizes. Obviously, you can then decide to keep or throw them away.  
 
 Here is a great youtube video explaining it in detail!
 
