@@ -46,12 +46,34 @@ So dotnet is a managed language with a runtime. Microsoft has some [performance 
 So here are my thoughts on the client side of things.
 
 * Minify all the content
+* Fingerprint all css/js content and set cache headers to maximum time
 * Deliver everything with brotli compression
 * Always use `Woff2` for fonts
 * Avoid expensive css selectors
-  * 
+  * `:nth child`
+  * `fixed`
+  * partial matching `[class^="wrap"]`
+* Images
+  * Recompile all images in the build to `jpeg 2000, jpeg xr, and webp`
+  * Serve `jpeg 2000` to ios
+  * `jpeg XR` to ie11 and edge
+  * Send `webp` to everyone else
+* PWA
+  * Use a service worker to cache assets
+  * Also use a service worker to prefetch blog posts
+  * Offline support
+* CDN
+  * Use Cloudflare to deliver assets faster
+  * Cloudflare's argo improves geo-routing
+  * Throw 301's inside cloudflares own datacenters with workers
 
 
 ## Tools 
 
+These are the list of tools I'm using to measure performance.
 
+* `lighthouse` - Built into chrome (its in the audit tab in the devtools), this displays a lot of performance and PWA improvements.
+* [Web Hint](https://webhint.io/) is like a linter for your web pages. The tool provides a ton of improvements from accessibility to performance
+* I really like [pingdom's](https://tools.pingdom.com/) page load time tool.
+* Good ol' [web page test is also great](https://www.webpagetest.org/)
+* The chrome devtools can also give you a breakdown as to what unused css you have on the page
